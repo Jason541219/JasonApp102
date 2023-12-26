@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_listview_mygroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+        <TextView
+            android:id="@+id/txt_clinicname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="4"
+            android:text="C"
+            android:gravity="center_vertical|center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/labeltextsize"
+            android:textFontWeight="900"/>
+         <TextView
+            android:id="@+id/txt_membername"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="2"
+            android:text="M"
+            android:gravity="center_vertical|center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/labeltextsize"
+            android:textFontWeight="900"/>
+    </LinearLayout>
+</LinearLayout>
+

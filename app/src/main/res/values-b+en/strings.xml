@@ -1,0 +1,529 @@
+<resources>
+<string name="app_name">Magic Pulse Cloud</string>
+<string name="action_settings">Settings</string>
+<string name="activity_login_title">Login</string>
+<string name="activity_bpm_title">Measurement</string>
+<string name="activity_upload_title">Upload</string>
+<string name="activity_cuffreset_title">Reset</string>
+<string name="activity_customersn_title">CustomerSN</string>
+<string name="activity_scanble_title">Bluetooth Scan</string>
+<string name="activity_bpmprepare_title">Preparation</string>
+<string name="activity_register_title">Register</string>
+<string name="activity_forgetpass_title">Forgot Password</string>
+<string name="activity_privacy_title">Privacy Policy</string>
+<string name="activity_analysis_title">Analysis</string>
+<string name="activity_chooserecords_title">Data Type</string>
+<string name="activity_charthistory_title">Historical Charts</string>
+<string name="activity_barcompare_title">Comparison Before and After</string>
+<string name="activity_myrecords_title">Records</string>
+<string name="activity_mygroup_title">My Groups</string>
+<string name="activity_payorder_title">Orders</string>
+<string name="activity_infomation_title">System Announcements</string>
+<string name="activity_setting_title">Personal Settings</string>
+<string name="setting_changepass_title">Change Password</string>
+<string name="setting_requestpush_title">Push Notification Settings</string>
+
+<!-- Strings used for fragments for navigation -->
+<string name="first_fragment_label">First Fragment</string>
+<string name="second_fragment_label">Second Fragment</string>
+<string name="next">Next</string>
+<string name="previous">Previous</string>
+<string name="hello_first_fragment">Hello first fragment</string>
+<string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+<!-- activity_main -->
+<string name="name_menu_online">Online Operations</string>
+<string name="name_menu_offline">Offline Operations</string>
+    <string name="name_menu_web">Web DB</string>
+    <string name="name_menu_test">Test DB</string>
+<string name="label_maintitlecompany">Taiwan EChain</string>
+<string name="label_maintitlename">Magic Pulse Cloud</string>
+<string name="label_loginclinic">Clinic</string>
+<string name="label_useraccount">Account</string>
+<string name="label_userpassword">Password</string>
+<string name="label_loginrole">Role</string>
+<string name="btn_login">Login</string>
+<string name="inputhint_loginclinic">Enter your clinic</string>
+<string name="inputhint_loginaccount">Enter your account</string>
+<string name="check_rememberme">Remember me</string>
+<string name="inputhint_loginpass">Enter your password</string>
+<string name="role_user">Home User</string>
+<string name="role_admin">Organization</string>
+<string name="btn_logina">Login</string>
+<string name="btn_loginp">User</string>
+<string name="label_registeraccount">Register Account</string>
+<string name="label_forgetpass">Forgot Password</string>
+<string name="dialog_msg_thispagenotready">This system is not yet available</string>
+<string name="dialog_systemcomment">System Prompt</string>
+<string name="dialog_IAgree">Agree</string>
+<string name="dialog_NextTime">Next Time</string>
+<string name="dialog_OK">OK</string>
+<string name="dialog_Confirm">Confirm</string>
+<string name="dialog_Cancel">Cancel</string>
+<string name="dialog_deletedata">Delete</string>
+<string name="dialog_canceldelete">Keep</string>
+<string name="dialog_msg_accountpasserror">Incorrect account or password, or you have not registered</string>
+<string name="dialog_msg_clinicaccountpasserror">Incorrect clinic, account, or password. Please correct and try again</string>
+<string name="dialog_msg_clinicnameerror">Incorrect clinic name. Please double-check and try again</string>
+<string name="dialog_msg_accountpassempty">Clinic, account, and password fields cannot be empty</string>
+<string name="dialog_msg_cliniccontainsspace">Clinic field cannot contain spaces</string>
+<string name="dialog_msg_accountcontainsspace">Account field cannot contain spaces</string>
+<string name="dialog_msg_passcontainsspace">Password field cannot contain spaces</string>
+<string name="dialog_msg_unableconnect2server">Unable to connect to the server. Please check your network connection</string>
+<string name="dialog_msg_fcmtokenunknown">Your device does not support push notification service. Please close the app.</string>
+<string name="toast_welcome">Welcome</string>
+
+
+<!-- activity_register-->
+<string name="label_userpid">ID</string>
+<string name="label_userbirthday">Birthday</string>
+<string name="label_useremail">Email</string>
+<string name="label_usermobile">Mobile Number</string>
+<string name="label_usergender">Gender</string>
+<string name="label_useravatar">Facial Photo</string>
+<string name="inputhint_registeraccount">Set your login account</string>
+<string name="inputhint_registerpass">Set your login password</string>
+<string name="inputhint_registerpid">Enter your ID number</string>
+<string name="inputhint_registerbirthday">Enter your birthday</string>
+<string name="inputhint_registeremail">Enter your email</string>
+<string name="inputhint_registermobile">Enter your mobile number</string>
+<string name="radio_registermale">Male</string>
+<string name="radio_registerfemale">Female</string>
+<string name="btn_ready2register">Apply Registration</string>
+<string name="msg_registeraccount_error">Account format error, please enter 6 - 30 alphanumeric characters</string>
+<string name="msg_registerpass_error">Password format error, please enter 6 - 12 alphanumeric characters</string>
+<string name="msg_registerclinic_error">Clinic format error, please enter 2 - 12 Chinese or English or alphanumeric characters</string>
+<string name="msg_registerpid_error">ID number format error, must be uppercase English followed by 9 digits</string>
+<string name="msg_registerbirthday_error">Birthday field cannot be empty</string>
+<string name="msg_registeremail_error">Please enter a valid email format</string>
+<string name="msg_registermobile_error">Mobile number format error, please enter 09 followed by 8 digits. Do not include spaces or other characters in between</string>
+<string name="dialog_msg_notsupportbluetooth">Your device does not support Bluetooth, the system will close shortly.</string>
+<string name="dialog_msg_notenabledluetooth">Bluetooth is not enabled, the app will close shortly.</string>
+<string name="age">years old</string>
+<string name="switch_posture">Posture</string>
+<string name="switch_sitting">Sitting</string>
+<string name="switch_lie">Lying</string>
+<string name="switch_position">Position</string>
+<string name="switch_lefthand">L. Hand</string>
+<string name="switch_righthand">R. Hand</string>
+<string name="txt_oxygensaturation">Oxygen Saturation</string>
+<string name="nomeasurenoinput">% (Leave blank if not measured)</string>
+<string name="txt_deviceversion">Version</string>
+<string name="dialog_msg_oxygenparseIntFail">Invalid input for oxygen saturation</string>
+<string name="label_btdevicename">Bluetooth Name</string>
+<string name="btn_bleupload">Upload</string>
+<string name="btn_bpmstart">Start</string>
+<string name="btn_bpmstop">Stop</string>
+<string name="dialog_msg_notenablebluetooth">You have canceled enabling Bluetooth. The system will be closed.</string>
+<string name="dialog_msg_nobpmmacbind">You need to bind the meridian blood pressure monitor before using the app.</string>
+<string name="unknown_device">Unknown Device</string>
+<string name="menu_scan">Start</string>
+<string name="menu_stop">Stop Scanning</string>
+<string name="menu_connect">Connect</string>
+<string name="menu_disconnect">Disconnect</string>
+<string name="title_devices">Bluetooth Devices</string>
+<string name="unknown_service">Unknown Service</string>
+<string name="unknown_characteristic">Unknown Characteristic</string>
+<string name="connected">Connected</string>
+<string name="disconnected">Disconnected</string>
+<string name="no_data">No Data</string>
+<string name="label_device_name">Device Name</string>
+<string name="label_device_address">Device Address</string>
+<string name="label_device_state">Device State</string>
+<string name="label_data">Device Data</string>
+
+<string-array name="spinner_usergender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+
+
+
+<string name="hello_world">Hello Square World!</string>
+<string name="btn_scanbleon">Scan Bluetooth Devices</string>
+<string name="btn_scanbleoff">Stop Scanning</string>
+<string name="btn_scanrefresh">Refresh Scan</string>
+<string name="dialog_msg_lescanfailed">Scanning Failed</string>
+<string name="label_scandevice_list">Bluetooth Scan List</string>
+<string name="dialog_msg_nobledevicediscovered">The system couldn\'t find the Bluetooth blood pressure monitor. Please make sure the Bluetooth blood pressure monitor is powered on and try scanning again.</string>
+<string name="dialog_msg_nobinddevicediscovered">The system couldn\'t find the bound Bluetooth blood pressure monitor. Please make sure the bound Bluetooth blood pressure monitor is powered on and try scanning again.</string>
+<string name="dialog_msg_notsuportbpmdevice">The selected Bluetooth device does not support blood pressure waveform measurement. Please select another device.</string>
+<string name="label_bloodpressure">Blood Pressure</string>
+<string name="label_heartbeatrate">Heart Rate</string>
+<string name="label_chartmode">Energy Type</string>
+<string name="label_sbp">Systolic Pressure</string>
+<string name="label_dbp">Diastolic Pressure</string>
+<string name="label_hr">Heart Rate</string>
+<string name="label_ihb">Irregular Heartbeat </string>
+<string name="label_bpunit">mmHg</string>
+<string name="label_hrunit">per minute</string>
+<string name="btn_bpmavatar">Take Photo</string>
+
+<!-- My Groups -->
+<string name="label_pidforgroup">ID Number</string>
+<string name="hint_pidforgroup">Add to the group ID number </string>
+<string name="label_mobileforgroup">Mobile Number</string>
+<string name="hint_mobileforgroup">0912345678</string>
+<string name="label_emailforgroup">Email</string>
+<string name="label_idforgroup">Group Name</string>
+<string name="label_listforgroup">Group List</string>
+<string name="btn_addgroupmember">Add Group</string>
+<string name="btn_viewgroupmember">View Group</string>
+<string name="dialog_msg_pidforgroupfail">Please confirm that the ID number is correct or that there are initial consultation records in the clinic</string>
+<string name="dialog_msg_pidforgroupempty">Please enter the ID number, mobile number, and email of the member to add to the group</string>
+<string name="dialog_msg_mygroupnoauthorization">You do not have permission to use "My Groups"</string>
+<string name="dialog_msg_nobpmclinic">No clinics offering the blood pressure monitor were found in the system</string>
+<string name="dialog_msg_groupmemberexceeds">Your group has reached the maximum limit of five members</string>
+
+<!-- Forgot Password -->
+<string name="btn_requestpass">Request New Password</string>
+<string name="label_forgetclinic">Clinic</string>
+<string name="label_forgetaccount">Account</string>
+<string name="label_forgetmobile">Last 5 digits of Mobile Number</string>
+<string name="label_forgetpid">Last 5 digits of ID Number</string>
+<string name="label_forgetbirthday">4-digit Birthdate</string>
+<string name="label_forgetbirthday_hint">For example, enter 0309 for March 9th</string>
+<string name="label_forgetrank">Rank among Siblings</string>
+<string name="label_forgetrank_hint">For example, 1 = Eldest, 2 = Second, and so on</string>
+<string name="label_forgetfloor">Residential Floor Number</string>
+<string name="label_forgetfloor_hint">For example, 1 = 1st floor, 2 = 2nd floor, and so on</string>
+<string name="msg_forgetpid_error">Please enter the last 5 digits of your ID number</string>
+<string name="msg_forgetbirthday_error">Please enter a 4-digit birthdate</string>
+<string name="msg_forgetmobile_error">Please enter the last 5 digits of your mobile number</string>
+<string name="msg_forgetrank_error">Please enter the rank among siblings as a number</string>
+<string name="msg_forgetfloor_error">Please enter the residential floor number as a number</string>
+<string name="activity_mainfunction_title">Main Function Page</string>
+<string name="check_privacyagree">I agree that I have read and fully understood the terms of use and I am willing to use this service</string>
+<string name="clicktotakepicture">Tap to open camera function</string>
+<string name="btn_blestopmeasure">Stop</string>
+<string name="btn_blestartmeasure">Start</string>
+<string name="dialog_msg_forgetpassask">If you request a new password, your old password will become invalid and cannot be used. Are you sure you want to continue requesting a new password?</string>
+<string name="dialog_msg_checkHasAccount">If you have previously registered or already have a clinic account, please do not register again.</string>
+<string name="dialog_gotoregister">Go to Registration</string>
+<string name="dialog_goforgetpass">Request New Password</string>
+<string name="dialog_abordforgetpass">Cancel Request</string>
+<string name="label_forgetdescription">Please enter the following information. If you did not set the rank among siblings and residential floor when registering your account, leave these fields blank.</string>
+
+<!-- Meridian Analysis Report -->
+<string name="label_bpmanalysischart"> Analysis Chart</string>
+<string name="label_bpmanalysisreport"> Measurement Stability</string>
+<string name="name_meridiancode">Harmonics</string>
+<string name="name_energydensity">Energy Density</string>
+<string name="name_energyvariance">Variance Rate</string>
+<string name="name_measuretime"> Time:</string>
+<string name="name_recordrange3month">3 Months</string>
+<string name="name_recordrange12month">1 Year</string>
+<string name="name_recordrange">Selected Range</string>
+<string name="amplitudes">Energy</string>
+<string name="amplitudes_realimg"> Energy Intensity</string>
+<string name="amplitudes_ratio">Energy Ratio</string>
+<string name="amplitudes_variance">Energy Variance</string>
+<string name="phase">Phase</string>
+<string name="phase_realimg"> Phase Intensity </string>
+<string name="phase_variance">Phase Variance</string>
+<string name="phase_ratio">Phase Ratio</string>
+<string name="heartrate_variance">Heart Rate Variability</string>
+<string name="btn_next"><![CDATA[>]]></string>
+<string name="btn_prev"><![CDATA[<]]></string>
+<string name="btn_bpmupload">Upload</string>
+<string name="btn_bpmstopmeasure">Stop</string>
+<string name="btn_bpmreloadmeasure">Remeasure</string>
+<string name="dialog_msg_bpmuploaderror">Data upload failed. Please check your network connection and try uploading again.</string>
+<string name="dialog_reupload">Re-upload</string>
+<string name="dialog_localsave">Save Locally</string>
+<string name="dialog_abordupload">Abort Upload</string>
+<string name="dialog_msg_bpmuploadsuccess">Data upload successful. Would you like to measure again for the same participant, or switch to the next participant?</string>
+<string name="dialog_msg_bpmsavesuccess">Data saved successfully. Would you like to measure again for the same participant, or switch to the next participant?</string>
+<string name="dialog_nextmember">Next Participant</string>
+<string name="dialog_switchhand">Measure Again</string>
+<string name="bemeasuredmember">Participant</string>
+<string name="txt_bpmavatar">Facial Photo</string>
+<string name="btn_ready2measure">Start</string>
+<string name="dialog_msg_systemerror">System Error</string>
+<string name="dialog_msg_requestfail">Database Query Error</string>
+<string name="dialog_msg_fftcounterror">Incorrect FFT transformation data</string>
+<string name="dialog_msg_jsontranserror">JSON conversion failed</string>
+<string name="dialog_msg_bpmmeasurecomplete">Do not upload pulse measurement data for non-participants to avoid diagnostic errors due to data inaccuracies.</string>
+<string name="dialog_DONTWANT">Do not</string>
+<string name="bpwavename">Blood Pressure Wave</string>
+<string name="pulsewavename">Pulse Wave</string>
+<string name="getanalyticresult">Analysis Result</string>
+<string name="activity_chartwave_title">Blood Pressure Waveform</string>
+<string name="pulsewave1">First Blood Pressure Wave</string>
+<string name="pulsewave2">Second Blood Pressure Wave</string>
+<string name="btn_stopmeasure">Stop</string>
+<string name="dialog_msg_measurehasbeenstopped">Are you sure you want to stop the measurement?</string>
+<string name="dialog_measurestop_yes">Stop</string>
+<string name="dialog_measurestop_no">Continue</string>
+<string name="dialog_measurereload">Remeasure</string>
+<string name="dialog_errorreport">Report Error</string>
+<string name="progress_upload">Uploading...</string>
+<string name="progress_analysis">Analyzing...</string>
+<string name="btn_remeasure">Remeasure</string>
+<string name="btn_nextmeasure">Next Measurement</string>
+<string name="dialog_msg_bpmhardwarestop">The blood pressure wave monitor has stopped working. Please stop the measurement and check the status of the monitor.</string>
+<string name="dialog_msg_bpmreaderror">The blood pressure wave monitor is unable to obtain blood pressure and heart rate data. Please readjust the tightness of the cuff and turn on the power of the blood pressure wave monitor before reattempting the measurement.</string>
+<string name="dialog_msg_bpmreaderrorandreport">The blood pressure wave monitor is unable to obtain blood pressure and heart rate data. You can choose to report the error message to the system or readjust the tightness of the cuff and turn on the power of the blood pressure wave monitor before reattempting the measurement.</string>
+<string name="dialog_msg_bpmreadinsufficient">Insufficient data from the blood pressure wave monitor. Please check the status of the monitor and click "Remeasure" to retry.</string>
+<string name="dialog_msg_bpmreadscheduleerror">Incorrect measurement sequence of the blood pressure wave monitor. Please click "Remeasure" to retry.</string>
+<string name="dialog_msg_bpmdatalengtherror">Incorrect data length from the blood pressure wave monitor. Please restart the blood pressure wave monitor before reattempting the measurement.</string>
+<string name="dialog_msg_nomemberregistertoday">No cases have registered today.</string>
+<string name="dialog_msg_bluetoothmanagerbuildfail">Unable to build Bluetooth manager during initialization. The measurement process will terminate.</string>
+<string name="dialog_msg_bluetoothadapterbuildfail">Unable to obtain Bluetooth adapter during initialization. The measurement process will terminate.</string>
+<string name="dialog_msg_bpmhardwareinflater">Abnormal operation of the blood pressure wave monitor. Please check if it is inflating or stopped working.</string>
+<string name="dialog_msg_bpmbluetoothondisconnected">Bluetooth connection to the blood pressure wave monitor has been disconnected. Please check the connection status and restart the measurement.</string>
+<string name="dialog_msg_bpmanlaysisresult">Your blood pressure harmonics disorder is high. To exclude measurement errors, it is recommended to measure again. If the high value persists after remeasurement, it is recommended to consult a doctor.</string>
+<string name="dialog_msg_guestnoupload">Guest data cannot be uploaded.</string>
+<string name="dialog_measurestop_inflating">Inflating, continue measurement</string>
+<string name="dialog_confirmupload">Confirm Upload</string>
+<string name="dialog_notupload">Do Not Upload</string>
+<string name="dialog_msg_waitdoctorresponse">Data has been uploaded successfully. Please wait for the doctor\'s response and analysis result.</string>
+<string name="dialog_msg_notifyattending">Pulse measurement data has been uploaded for . Please check the content in the pulse measurement system.</string>
+<string name="bpmstatus_M0P0">Measurement started</string>
+<string name="bpmstatus_M0P1">Measurement in progress...</string>
+<string name="bpmstatus_M0P2">Measurement completed</string>
+<string name="bpmstatus_M0P3">Inflating</string>
+<string name="bpmstatus_M1P0">Measurement started</string>
+<string name="bpmstatus_M1P1">(1) measurement in progress...</string>
+<string name="bpmstatus_M1P2">(2) measurement in progress...</string>
+<string name="bpmstatus_M1PX">Measurement in progress...</string>
+<string name="bpmstatus_M1P3">Measurement completed</string>
+<string name="bpmstatus_00">No error</string>
+<string name="bpmstatus_01">Arrhythmia</string>
+<string name="bpmstatus_E0">Exceeds measurement range</string>
+<string name="bpmstatus_E1">Application timeout</string>
+<string name="bpmstatus_E2">Exceeds maximum limit</string>
+<string name="bpmstatus_E3">Unable to obtain value</string>
+<string name="bpmstatus_EA">Interruption</string>
+<string name="bpmstatus_EB">Low voltage interruption</string>
+<string name="bpmstatus_EE">Exceeds measurement range</string>
+<string name="actionhint_pressStart">Please press the Start button on the blood pressure wave blood pressure monitor.</string>
+<string name="actionhint_readingstop">Blood pressure measurement operation paused.</string>
+<string name="actionhint_readinsufficient">Insufficient data. Please check the status and click "Remeasure" to retry.</string>
+<string name="actionhint_measurefinish">Measurement has ended. If the data is correct, please click "Upload "Or, click "Remeasure" to retry.</string>
+<string name="actionhint_pressMem">Please hold the MEM button for three seconds until the entire screen content is displayed, indicating the start. If the button is not pressed long enough, cannot be activated. In this case, click "Remeasure" to retry.</string>
+<string name="actionhint_keepstill">Please remain still and calm to avoid errors.</string>
+<string name="actionhint_checkinflating">If inflating, please wait until the inflation is complete. If no response, close, and check the device\'s status, and then restart it. Click "Remeasure" afterwards.</string>
+<string name="pulsewave2_color">Pulse Wave 2 (Green)</string>
+<string name="pulsewave1_color">Pulse Wave 1 (Yellow)</string>
+<string name="bpwavename_color">Blood Pressure Wave</string>
+<string name="dialog_msg_changepassempty">All fields must be filled</string>
+<string name="dialog_msg_changepassconflict">The new passwords do not match. Please re-enter</string>
+<string name="dialog_msg_changepasssuccess">Password changed successfully</string>
+<string name="dialog_msg_changepasserror">Failed to change password</string>
+<string name="dialog_msg_changepassupdatefail">Error updating password</string>
+<string name="dialog_msg_changepassincorrect">Incorrect current password. Please re-enter</string>
+<string name="dialog_msg_changepassdb">Database error</string>
+<string name="btn_readfftreport">Read Report</string>
+<string name="dialog_msg_fftreportnotready">Report is not ready yet. Please try again in a few minutes.</string>
+<string name="dialog_msg_recordiderror">Incorrect pulse record ID. Unable to retrieve data.</string>
+<string name="dialog_msg_takeavatarbeforebpm">Please take a facial photo before the blood pressure wave measurement.</string>
+<string name="dialog_msg_takeavatarbeforeregister">Please take a facial photo before registering</string>
+<string name="dialog_msg_registerduplicate">This account has already been registered. Please choose a different account</string>
+<string name="label_username">Name</string>
+<string name="inputhint_registername">Enter your name</string>
+<string name="mainfunctiontitle_bpm">Measurement</string>
+<string name="mainfunctiondes_bpm">Read data</string>
+<string name="mainfunctiontitle_upload">Upload</string>
+<string name="mainfunctiondes_upload">Upload data to the cloud</string>
+<string name="mainfunctiontitle_cuffreset">Cuff Reset</string>
+<string name="mainfunctiondes_cuffreset">Reset the cuff and zero the pulse counter</string>
+<string name="mainfunctiontitle_customersn">Customer SN</string>
+<string name="mainfunctiondes_customersn">Customer Device Serial Number</string>
+    <string name="mainfunctiontitle_dbswitch">切換資料庫</string>
+    <string name="mainfunctiondes_dbswitch">在正式區與測試區資料庫之間切換</string>
+<string name="mainfunctiontitle_cut">Blood Pressure Wave Cutting</string>
+<string name="mainfunctiondes_cut">Display and confirm the cutting result</string>
+<string name="mainfunctiontitle_changepass">Change Password</string>
+<string name="mainfunctiondes_changepass">Change your password</string>
+<string name="mainfunctiontitle_myrecords">My Records</string>
+<string name="mainfunctiondes_myrecords">Read my records</string>
+<string name="mainfunctiontitle_mygroup">My Group</string>
+<string name="mainfunctiondes_mygroup">Select members to join the group</string>
+<string name="mainfunctiontitle_mysubscript">Subscribe to Reports</string>
+<string name="mainfunctiondes_mysubscript">Subscribe to daily reports</string>
+<string name="mainfunctiontitle_myfolder">My Health Bank</string>
+<string name="mainfunctiondes_myfolder">Read the content from My Health Bank </string>
+<string name="mainfunctiontitle_reservation">Appointment Booking</string>
+<string name="mainfunctiondes_reservation">Schedule a medical appointment</string>
+<string name="mainfunctiontitle_setting">My Settings</string>
+<string name="mainfunctiondes_setting">Configure Information</string>
+<string name="mainfunctiontitle_family">Push Notification Settings</string>
+<string name="mainfunctiondes_family">Set sharing data with relatives</string>
+<string name="mainfunctiontitle_myqrcode">QR Code</string>
+<string name="mainfunctiondes_myqrcode">Display QR Code</string>
+<string name="mainfunctiontitle_alarm">Reminder</string>
+<string name="mainfunctiondes_alarm">Set the time for daily measurements</string>
+<string name="mainfunctiontitle_rememberaccount">Remember Account</string>
+<string name="mainfunctiontdes_rememberaccount">Automatically remember and login</string>
+<string name="label_familyinfo">Push Notification</string>
+<string name="inputhint_familyaccount">Please enter the account for push notification</string>
+<string name="inputhint_familypid">Please enter the ID number of the family member to add</string>
+<string name="inputhint_familybirthday">Please enter the birthday of the family member to add</string>
+<string name="btn_requestfamily">Request Push Notification</string>
+<string name="dialog_msg_familyfieldempty">The push notification account field cannot be empty</string>
+<string name="name_acceptfamilyname">Push Notification Name and Account</string>
+<string name="dialog_msg_familysettingok">Push notification settings completed</string>
+<string name="dialog_msg_insertfamilyfail">Database error, failed to add push notification</string>
+<string name="dialog_msg_updatefamilyfail">Database error, failed to update push notification</string>
+<string name="dialog_msg_incorrectfamilyinfo">The push notification account information you entered is incorrect</string>
+<string name="dialog_msg_familyalready">Push notification for this account has already been set</string>
+ <!-- Setting Change Pass -->
+<string name="label_password00">Current Password</string>
+<string name="label_password10">New Password</string>
+<string name="label_password11">Confirm New Password</string>
+<string name="inputhint_password00">Please enter your current password</string>
+<string name="inputhint_password10">Please enter your new password</string>
+<string name="inputhint_password11">Please re-enter your new password</string>
+<string name="btn_confrimchangepass">Change Password</string>
+<string name="label_pushlist">Push Notification List</string>
+<string name="label_addpushaccount">Add Push Notification</string>
+<string name="me">Me</string>
+<string name="requestpushagain">Request Again</string>
+<string name="disconnectpush">Disconnect Push</string>
+<string name="requestpushabord">Abort Request</string>
+<string name="reconnectpush">Reconnect Push</string>
+<string name="acceptpushrequest">Accept Request</string>
+<string name="denypushrequest">Deny Request</string>
+<string name="dialog_msg_requestpushagain">Are you sure you want to submit the push notification request again?</string>
+<string name="dialog_msg_disconnectpush">Are you sure you want to disconnect the blood pressure wave push notification for this account?</string>
+<string name="dialog_msg_reconnectpush">Are you sure you want to reconnect the blood pressure wave push notification for this account?</string>
+<string name="dialog_msg_acceptpushrequest">Are you sure you want to accept the push notification request for this account?</string>
+<string name="dialog_msg_requestpushabord">Are you sure you want to abort the blood pressure wave push notification request for this account?</string>
+<string name="dialog_msg_denypushrequest">Are you sure you want to deny the push notification request for this account?</string>
+<string name="msg_fcm_title">Blood Pressure Wave System Notification</string>
+<string name="msg_fcm_requestpushagain">Wants to obtain authorization for your blood pressure wave notifications. Please check the app settings to confirm acceptance.</string>
+<string name="msg_fcm_acceptpushrequest">You have been authorized to receive blood pressure wave notifications. Please check the app settings to confirm.</string>
+<string name="msg_fcm_denypushrequest">Your blood pressure wave notification authorization has been denied. Please check the app settings to confirm.</string>
+
+<!-- Set Diagnosis Reminder Alarm -->
+<string name="label_alarmtitle">Alarm Name</string>
+<string name="inputhint_alarmtitle">Set the alarm name</string>
+<string name="input_alarmtitle">Diagnosis Reminder</string>
+<string name="btn_confirmalarm">Confirm Alarm</string>
+<string name="label_alarmtime">Reminder Time</string>
+<string name="setting_alarm_title">Diagnosis Reminder</string>
+<string name="dialog_msg_alerttitleempty">Set the alarm name </string>
+<string name="dialog_msg_alerttimeempty">Set reminder time</string>
+<string name="label_registerclinic">Clinic</string>
+<string name="label_myqrcode">My QR Code</string>
+
+<!-- Display QR Code -->
+<string name="setting_myqrcode_title">QR Code</string>
+<string name="mainfunctiontitle_passquestion">Password Hint</string>
+<string name="mainfunctiontdes_passquestion">Set a hint question for password recovery</string>
+<string name="setting_passquestion_title">Password Hint</string>
+<string name="btn_confirm">Confirm</string>
+<string name="dialog_msg_forgetpassanswererror">Your answer to the question is incorrect</string>
+<string name="dialog_msg_yourpassis">Your password is:</string>
+<string name="label_forgetrole">I am</string>
+<string name="switch_imadmin">Professionals</string>
+<string name="switch_imuser">User</string>
+<string name="setting_rememberlogin_title">Remember Login</string>
+<string name="check_rememberaccount">I agree to automatically record the previous login account</string>
+<string name="check_rememberpass">I agree to automatically record the previous login password</string>
+<string name="activity_pulsecut_title">Wave Cutting</string>
+<string name="setting_me_title">About Me</string>
+<string name="btn_ready2me">Confirm Changes</string>
+<string name="btn_cancel2me">Cancel Changes</string>
+<string name="mainfunctiontitle_me">About Me</string>
+<string name="mainfunctiondes_me">My Profile</string>
+<string name="activity_bpmlist_title">Case List</string>
+<string name="dialog_msg_bluetoothscanneedgps">GPS permission is required to enable Bluetooth scanning.</string>
+<string name="dialog_msg_bluetoothscanneedpermission">Permission is required to enable Bluetooth scanning.</string>
+<string name="dialog_msg_bluetoothconnneedpermission">Permission is required to enable Bluetooth communication.</string>
+<string name="dialog_Update">Update</string>
+<string name="dialog_msg_appversionincorrect">There is a new version of the app available. Please choose "Update" to download.\nOr long-press the version in the bottom right corner of the screen to manually update.</string>
+<string name="dialog_msg_mustsignprivacypolicy">You must agree to the privacy policy before using the app.</string>
+<string name="dialog_msg_fcmtokenwriteerror">Failed to set up FCM push notifications.</string>
+<string name="mainfunctiontitle_payment">Online Payment</string>
+<string name="mainfunctiondes_payment">Make payment using credit card</string>
+<string name="dialog_msg_certificationmailhassendtou">A registration verification email has been sent. Please check your designated mailbox (including the spam folder).</string>
+
+<!-- My Health Bank -->
+<string name="activity_mhbagreement_title">Agreement</string>
+<string name="check_mhbagreement">I have read and fully understood the terms of use, and agree to use this service.</string>
+<string name="btn_mhbagreement">Agree</string>
+<string name="btn_mhbdisagree">Disagree</string>
+<string name="dialog_msg_mhbaccessnoted">I authorize and agree that Taiwan EChain Co., Ltd. may provide this software and service system, and may select and download the personal health record data within a specific period, including medical treatment, medication, and test results, for storage and use in this service system.</string>
+<string name="dialog_msg_mhbaccessreport">In order to obtain comprehensive health information, I authorize and agree that Taiwan EChain Co., Ltd. may provide this software and service system, and may select and download the personal health record data within a specific period, including medical treatment, medication, and test results, for storage and use in this service system, and provide it for query in this software. I understand that if I do not agree to authorize, the use of the subscription service will be suspended.</string>
+<string name="dialog_msg_reporttodayonly">You can only access reports for today\'s measurements.</string>
+
+<!-- Data Upload -->
+<string name="btn_deletedata">Delete Data</string>
+<string name="btn_uploaddata">Upload Data</string>
+<string name="label_uploaddata">Please select the data to upload or delete</string>
+<string name="dialog_msg_uploadcomplete">Data has been successfully uploaded!</string>
+
+<!-- Main Function Page -->
+<string name="dialog_msg_askuploaddata">You have measurement data that has not been uploaded yet. Would you like to upload now?</string>
+<string name="dialog_msg_unableuploadinofflinemode">You are currently in offline mode. Data cannot be uploaded.</string>
+<string name="dialog_uploaddata">Upload Now</string>
+<string name="dialog_uploadlater">Upload Later</string>
+<string name="dialog_msg_reportsubscriptexpired">Your subscription for report service has expired. Would you like to renew?</string>
+<string name="dialog_msg_prereportsubscript1">Your subscription for reports is valid until</string>
+<string name="dialog_msg_prereportsubscript2">Please apply for a new subscription after the expiration date.</string>
+<string name="dialog_msg_goingtomhb">Redirecting to National Health Insurance Administration\nPlease enter your information in My Health Bank .</string>
+<string name="dialog_msg_goingtomhberror">Failed to open the National Health Insurance Administration My Health Bank module. Please contact EChain Information staff.</string>
+
+<!-- Select Data Type -->
+<string name="record_datatable">Data Table</string>
+<string name="record_datalinechart">Line Chart</string>
+<string name="record_databarchart">Comparison Chart</string>
+<string name="recorddes_datatable">Display your health data in numerical form</string>
+<string name="recorddes_datalinechart">Display your health data in line chart format</string>
+<string name="recorddes_databarchart">Compare your health data before and after</string>
+<string name="label_before">Before</string>
+<string name="label_after">After</string>
+<string name="dialog_msg_bpwavearrayerror">There is an error in the blood pressure waveform data. Unable to display waveform.</string>
+<string name="dialog_msg_authenticationdeny">You do not have permission to access this feature.</string>
+<string name="dialog_msg_readreportauthdeny">You do not have permission to read reports. Please subscribe to the report reading service.</string>
+<string name="dialog_msg_readreportover1">You have reached the daily limit of 1 report.</string>
+<string name="dialog_msg_readreportover2">You have reached the daily limit of 2 reports.</string>
+<string name="dialog_msg_reportreadexceedquota">You have exceeded the quota for reading reports today.</string>
+<string name="dialog_msg_norecorddatafount">There is not record in DataBase</string>
+<string name="dialog_msg_norecorddatafountin3month">There is not measurement data in 3 month</string>
+<!-- Reset Cuff -->
+<string name="btn_cuffreset">Reset Count</string>
+<string name="dialog_msg_cuffresetbluetoothondisconnected">Bluetooth connection with the blood pressure cuff is interrupted. Please check the connection status and reconnect.</string>
+<string name="label_cuffcount">Number of times the blood pressure cuff has been used</string>
+<string name="dialog_msg_askcuffreset">Do you want to reset the number of times the cuff has been used?</string>
+<string name="dialog_cuffreset">Reset</string>
+
+<!-- 制定序號-->
+<string name="btn_customersn">Customer SN</string>
+<string name="dialog_msg_customersnbluetoothondisconnected">Bluetooth connection with the blood pressure cuff is interrupted. Please check the connection status and reconnect.</string>
+<string name="label_customersn">Device SN</string>
+<string name="dialog_msg_askcustomersn">Do you want to customer device serial number?</string>
+<string name="dialog_customersn">Customerize</string>
+
+
+<string-array name="chartmode_array">
+        <!-- item>Energy Intenstty</item-->
+        <item>Energy Variability</item>
+    </string-array>
+
+    <string-array name="charthx_array">
+        <item>H0</item>
+        <item>H1</item>
+        <item>H2</item>
+        <item>H3</item>
+        <item>H4</item>
+        <item>H5</item>
+        <item>H6</item>
+        <item>H7</item>
+        <item>H8</item>
+        <item>H9</item>
+        <item>H10</item>
+    </string-array>
+
+    <string name="title_activity__infomation">Scrolling Activity</string>
+
+</resources>
+
+
+

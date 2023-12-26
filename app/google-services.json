@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "67191811885",
+    "firebase_url": "https://jasonapp102.firebaseio.com",
+    "project_id": "jasonapp102",
+    "storage_bucket": "jasonapp102.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67191811885:android:71c92cb8cbac3927132da4",
+        "android_client_info": {
+          "package_name": "com.ideas.micro.jasonapp102"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67191811885-pjeovn9ohtjbf8lqj840fidn27vfihpg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLnO7wh-YZbmC7LB5lc8gWhvniJkyy91o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67191811885-pjeovn9ohtjbf8lqj840fidn27vfihpg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

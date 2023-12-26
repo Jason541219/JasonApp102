@@ -1,0 +1,46 @@
+2022-04-28
+    1. Activity_ChartWave  隱藏 text_pulsewave1, text_pulsewave2 的標示
+    2. btnlogina.setEnabled(isFCMcompleted && isLastestVersion);         // 啟用登入按鍵
+        在模擬器中，isFCMcompleted Always False 導致無法開啟登入按鍵
+
+2022-05-03
+    1. 血壓波顯示改用 TimerTask 每 100ms 觸發 v3 版測試正常
+
+2022-05-04
+    ※ 1. Activity_MyRecords 取得歷史資料的命令可以改成 GetBPMWaveRecordListByMem_APP 以加快速度
+
+2022-05-06
+    1. Activity_ChartWave.getWave(recordID);    新增檢查 recordID > 0
+
+2022-05-07
+    1. 測試APP版次，暫時將checkAppVersion(1125) 鎖定在 1125。避免更新作業。
+    2. 使用 LocalHost DB
+
+2022-05-08
+    1. Activity_ChartWave 修改 getWave 指令從 GetBPMWaveRecordByID_Auto -> GetBPMWaveRecordByID_APP
+
+2022-05-09
+    1.  isuserdataempty 新增clinic, useraccount, userpass 空格檢查
+
+2022-05-17
+    1. Activity_ScanBLE.java 藍芽搜尋只顯示BT-BTM 符合藍芽血壓計的 allowedName
+        GlobalVariables.allowedBLE = new ArrayList(Arrays.asList("BT-BPM BLE", "Ostar"));
+    2. 掃描完畢之後，如果沒有藍牙血壓計顯示警告
+
+2022-06-27
+    Activity_BPM_Btbpm.java
+            V2 的 13段 -> 直接 stoptimer
+                                        將 is13first = first 放在 runOnUiThread
+                                        wavedata = new JSONArray();
+            V3 的 14段 -> 直接 stoptimer
+                                       將 is14first = first 放在 runOnUiThread
+                                        wavedata = new JSONArray();
+            V3 回復兩階段脈診
+    將 Activity_BPM_Btbpm -> 另存為 Activity_BPM_Btbpmv2v3
+    再將 Activity_BPM_Btbpm 回復為 1125 版 (修正無法出現上傳的對話框)
+
+    2022-06-29
+        Activity_ChartWave.java 取得資料的方法 GetBPMWaveRecordByID_Auto -> GetBPMWaveRecordByID_APP
+
+    2. 延長螢幕鎖定時間
+    3. 藍芽斷線後自動連線

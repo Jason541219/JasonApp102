@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Mygroup">
+
+    <!-- 群組編號 -->
+    <TextView
+        android:id="@+id/label_idforgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_idforgroup"
+        android:textSize="@dimen/labeltextsize"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_idforgroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="10dp"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintBottom_toBottomOf="@id/label_idforgroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_idforgroup"
+        app:layout_constraintTop_toTopOf="@id/label_idforgroup" />
+
+    <!-- 診所-->
+    <TextView
+        android:id="@+id/label_clinicforgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_forgetclinic"
+        android:textSize="@dimen/labeltextsize"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_idforgroup" />
+
+    <Spinner
+        android:id="@+id/spinner_clinicforgroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toTopOf="@id/label_clinicforgroup"
+        app:layout_constraintBottom_toBottomOf="@id/label_clinicforgroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_clinicforgroup"
+        android:spinnerMode="dialog" />
+
+    <!-- 身分證 -->
+    <TextView
+        android:id="@+id/label_pidforgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_pidforgroup"
+        android:textSize="@dimen/labeltextsize"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_clinicforgroup" />
+
+    <EditText
+        android:id="@+id/input_pidforgroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:hint="@string/hint_pidforgroup"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@id/label_pidforgroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_pidforgroup"
+        app:layout_constraintTop_toTopOf="@id/label_pidforgroup" />
+
+    <!-- 生日 -->
+    <TextView
+        android:id="@+id/label_mobileforgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_mobileforgroup"
+        android:textSize="@dimen/labeltextsize"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_pidforgroup" />
+
+    <EditText
+        android:id="@+id/input_mobileforgroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:hint="@string/hint_mobileforgroup"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="@id/label_mobileforgroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_mobileforgroup"
+        app:layout_constraintTop_toTopOf="@id/label_mobileforgroup" />
+
+    <!-- EMail -->
+    <TextView
+        android:id="@+id/label_emailforgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_emailforgroup"
+        android:textSize="@dimen/labeltextsize"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_mobileforgroup" />
+
+    <EditText
+        android:id="@+id/input_emailforgroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@id/label_emailforgroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_emailforgroup"
+        app:layout_constraintTop_toTopOf="@id/label_emailforgroup" />
+
+    <Button
+        android:id="@+id/btn_addgroupmember"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/btn_shape_loginasa"
+        android:text="@string/btn_addgroupmember"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_emailforgroup" />
+
+    <!-- 群組列表 -->
+    <TextView
+        android:id="@+id/label_listforgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_listforgroup"
+        android:textSize="@dimen/labeltextsize"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_addgroupmember" />
+
+
+    <ListView
+        android:id="@+id/mygrouplist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_max="1024dp"
+        app:layout_constraintTop_toBottomOf="@id/label_listforgroup" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_mygroup"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

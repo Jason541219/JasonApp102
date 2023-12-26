@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Analysis">
+
+    <TextView
+        android:id="@+id/text_bpmanalysischart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/label_bpmanalysischart"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textFontWeight="800"
+        app:layout_constraintEnd_toStartOf="@id/btn_next"
+        app:layout_constraintStart_toEndOf="@id/btn_prev"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <Button
+        android:id="@+id/btn_prev"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#FF0000"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/text_bpmanalysischart"
+        android:text="＜" />
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#FF0000"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/text_bpmanalysischart"
+        android:text="＞" />
+
+    <LinearLayout
+
+        android:id="@+id/chartlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_shape_loginasa"
+        android:orientation="vertical"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_bpmanalysischart">
+    </LinearLayout>
+<!--
+    <TextView
+        android:id="@+id/text_bpmanalysisreport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/label_bpmanalysisreport"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textFontWeight="800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chartlayout"></TextView>
+-->
+    <TextView
+        android:id="@+id/name_meridiancode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textFontWeight="800"
+        android:text="@string/name_meridiancode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chartlayout"
+        app:layout_constraintWidth_percent="0.5" />
+
+
+    <TextView
+        android:id="@+id/name_energydensity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textFontWeight="800"
+        android:text="@string/amplitudes"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintStart_toEndOf="@id/name_meridiancode"
+        app:layout_constraintTop_toBottomOf="@id/chartlayout"
+/>
+    <!--
+    <TextView
+        android:id="@+id/name_energyvariance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textFontWeight="800"
+        android:text="@string/name_energyvariance"
+        app:layout_constraintWidth_percent="0.33"
+        app:layout_constraintStart_toEndOf="@id/name_energydensity"
+        app:layout_constraintTop_toBottomOf="@id/text_bpmanalysisreport"
+/>
+    -->
+    <ListView
+        android:id="@+id/analysislist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_energydensity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

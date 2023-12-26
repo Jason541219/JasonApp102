@@ -1,0 +1,535 @@
+<resources>
+    <string name="app_name">神算脈雲</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_login_title">登入</string>
+    <string name="activity_bpm_title">血壓波量測</string>
+    <string name="activity_upload_title">數據上傳</string>
+    <string name="activity_cuffreset_title">計數歸零</string>
+    <string name="activity_customersn_title">制定序號</string>
+    <string name="activity_scanble_title">藍牙掃描</string>
+    <string name="activity_bpmprepare_title">量測準備</string>
+    <string name="activity_register_title">註冊帳號</string>
+    <string name="activity_forgetpass_title">忘記密碼</string>
+    <string name="activity_privacy_title">隱私權聲明</string>
+    <string name="activity_analysis_title">血壓波分析</string>
+    <string name="activity_chooserecords_title">資料類型</string>
+    <string name="activity_charthistory_title">歷史圖表</string>
+    <string name="activity_barcompare_title">前後比對</string>
+    <string name="activity_myrecords_title">血壓波紀錄</string>
+    <string name="activity_mygroup_title">我的群組</string>
+    <string name="activity_payorder_title">訂單</string>
+    <string name="activity_infomation_title">系統公告</string>
+
+    <string name="activity_setting_title">個人設定</string>
+    <string name="setting_changepass_title">變更密碼</string>
+    <string name="setting_requestpush_title">推播設定</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- activity_main -->
+    <string name="name_menu_online">連線操作</string>
+    <string name="name_menu_offline">離線操作</string>
+    <string name="name_menu_web">正式DB</string>
+    <string name="name_menu_test">測試DB</string>
+    <string name="label_maintitlecompany">臺灣益謙</string>
+    <string name="label_maintitlename">神算脈雲</string>
+    <string name="label_loginclinic">診所</string>
+    <string name="label_useraccount">帳號</string>
+    <string name="label_userpassword">密碼</string>
+    <string name="label_loginrole">角色</string>
+    <string name="btn_login">登入</string>
+    <string name="inputhint_loginclinic">請輸入您的診所</string>
+    <string name="inputhint_loginaccount">請輸入您的帳號</string>
+    <string name="check_rememberme">記住我的帳號</string>
+    <string name="inputhint_loginpass">請輸入您的密碼</string>
+    <string name="role_user">家庭用戶</string>
+    <string name="role_admin">機構團體</string>
+    <string name="btn_logina">量測登入</string>
+    <string name="btn_loginp">我是用戶</string>
+    <string name="label_registeraccount">註冊帳號</string>
+    <string name="label_forgetpass">忘記密碼</string>
+    <string name="dialog_msg_thispagenotready">此系統尚未開放</string>
+    <string name="dialog_systemcomment">系統提示</string>
+    <string name="dialog_IAgree">我同意</string>
+    <string name="dialog_NextTime">下次再說</string>
+    <string name="dialog_OK">好</string>
+    <string name="dialog_Confirm">確定</string>
+    <string name="dialog_Cancel">取消</string>
+    <string name="dialog_deletedata">刪除</string>
+    <string name="dialog_canceldelete">保留</string>
+
+    <string name="dialog_msg_accountpasserror">帳號密碼錯誤，或是您尚未註冊</string>
+    <string name="dialog_msg_clinicaccountpasserror">診所、帳號或密碼輸入錯誤。請修正後再登入</string>
+    <string name="dialog_msg_clinicnameerror">診所名稱輸入錯誤，請重新確認後再登入</string>
+    <string name="dialog_msg_accountpassempty">診所、帳號及密碼欄位不可以空白</string>
+    <string name="dialog_msg_cliniccontainsspace">診所欄位不可以有空格</string>
+    <string name="dialog_msg_accountcontainsspace">帳號欄位不可以有空格</string>
+    <string name="dialog_msg_passcontainsspace">密碼欄位不可以有空格</string>
+    <string name="dialog_msg_unableconnect2server">無法連線至伺服器，請檢查網路連線狀況</string>
+    <string name="dialog_msg_fcmtokenunknown">您的設備不支援推播服務，無法取得Token。請關閉APP。</string>
+    <string name="toast_welcome">歡迎您</string>
+
+
+    <!-- activity_register-->
+    <string name="label_userpid">身分ID</string>
+    <string name="label_userbirthday">生日</string>
+    <string name="label_useremail">電子郵件</string>
+    <string name="label_usermobile">手機號碼</string>
+    <string name="label_usergender">性別</string>
+    <string name="label_useravatar">臉部照片</string>
+
+    <string name="inputhint_registeraccount">請設定您的登入帳號</string>
+    <string name="inputhint_registerpass">請設定您的登入密碼</string>
+    <string name="inputhint_registerpid">請輸入您的身份證字號</string>
+    <string name="inputhint_registerbirthday">請輸入您的生日</string>
+    <string name="inputhint_registeremail">請輸入您的電子郵件</string>
+    <string name="inputhint_registermobile">請輸入您的手機號碼</string>
+    <string name="radio_registermale">男性</string>
+    <string name="radio_registerfemale">女性</string>
+    <string name="btn_ready2register">申請註冊</string>
+
+    <string name="msg_registeraccount_error">帳號格式錯誤，請輸入6 - 30位英文或數字</string>
+    <string name="msg_registerpass_error">密碼格式錯誤，請輸入6 - 12位英文或數字</string>
+    <string name="msg_registerclinic_error">診所格式錯誤，請輸入2 - 12位中文或英文或數字</string>
+    <string name="msg_registerpid_error">身份證字號格式錯誤，必須為大寫英文接續9個數字</string>
+    <string name="msg_registerbirthday_error">生日欄位不可以空白</string>
+    <string name="msg_registeremail_error">請輸入正確的電子郵件格式</string>
+    <string name="msg_registermobile_error">手機號碼格式錯誤，請輸入09開頭接續8位數字。中間請勿空白或其他文字隔開</string>
+    <string name="dialog_msg_notsupportbluetooth">您的裝置不支援藍芽功能，系統即將關閉。</string>
+    <string name="dialog_msg_notenabledluetooth">沒有開啟藍芽，APP即將關閉。</string>
+    <string name="age">歲</string>
+    <string name="switch_posture">姿勢</string>
+    <string name="switch_sitting">坐姿</string>
+    <string name="switch_lie">臥姿</string>
+    <string name="switch_position">位置</string>
+    <string name="switch_lefthand">左手</string>
+    <string name="switch_righthand">右手</string>
+    <string name="txt_oxygensaturation">血氧濃度</string>
+    <string name="nomeasurenoinput">% （未量測者可不填寫）</string>
+    <string name="txt_deviceversion">血壓計版本</string>
+    <string name="dialog_msg_oxygenparseIntFail">血氧濃度輸入錯誤</string>
+    <string name="label_btdevicename">藍牙設備名稱</string>
+    <string name="btn_bleupload">資料上傳</string>
+    <string name="btn_bpmstart">開始量測</string>
+    <string name="btn_bpmstop">停止量測</string>
+    <string name="dialog_msg_notenablebluetooth">您取消開啟藍牙功能，系統將會關閉</string>
+    <string name="dialog_msg_nobpmmacbind">您必須要先綁定經脈血壓計，才能開始使用APP</string>
+    <string name="unknown_device">設備無法辨識</string>
+    <string name="menu_scan">開始掃描</string>
+    <string name="menu_stop">停止掃描</string>
+    <string name="menu_connect">連接</string>
+    <string name="menu_disconnect">中斷</string>
+    <string name="title_devices">藍牙裝置</string>
+    <string name="unknown_service">無法辨識服務</string>
+    <string name="unknown_characteristic">無法辨識特徵</string>
+    <string name="connected">已連接</string>
+    <string name="disconnected">連線中斷</string>
+    <string name="no_data">沒有資料</string>
+    <string name="label_device_name">設備名稱</string>
+    <string name="label_device_address">設備地址</string>
+    <string name="label_device_state">設備狀態</string>
+    <string name="label_data">設備資料</string>
+
+    <string-array name="spinner_usergender">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="btn_scanbleon">搜尋藍芽裝置</string>
+    <string name="btn_scanbleoff">停止搜尋裝置</string>
+    <string name="btn_scanrefresh">重新搜尋</string>
+    <string name="dialog_msg_lescanfailed">掃描失敗</string>
+    <string name="label_scandevice_list">藍牙掃描列表</string>
+    <string name="dialog_msg_nobledevicediscovered">系統掃描不到藍芽血壓計，請確認藍芽血壓計的電源開啟之後再重新掃描一次。</string>
+    <string name="dialog_msg_nobinddevicediscovered">系統掃描不到綁定的藍芽血壓計，請確認綁定的藍芽血壓計電源開啟之後再重新掃描一次。</string>
+    <string name="dialog_msg_notsuportbpmdevice">您選取的藍牙裝置並不支援血壓波量測功能，請重新選取。</string>
+    <string name="label_bloodpressure">血壓</string>
+    <string name="label_heartbeatrate">心率</string>
+    <string name="label_chartmode">能量類型</string>
+    <string name="label_sbp">收縮壓</string>
+    <string name="label_dbp">舒張壓</string>
+    <string name="label_hr">心率</string>
+    <string name="label_ihb">心率不整</string>
+    <string name="label_bpunit">mmHg</string>
+    <string name="label_hrunit">每分鐘</string>
+    <string name="btn_bpmavatar">拍照</string>
+
+    <!-- 我的群組 -->
+    <string name="label_pidforgroup">身分證字號</string>
+    <string name="hint_pidforgroup">加入群組會員的身分證字號</string>
+    <string name="label_mobileforgroup">手機號碼</string>
+    <string name="hint_mobileforgroup">0912345678</string>
+    <string name="label_emailforgroup">Email</string>
+    <string name="label_idforgroup">群組名稱</string>
+    <string name="label_listforgroup">群組列表</string>
+    <string name="btn_addgroupmember">加入群組</string>
+    <string name="btn_viewgroupmember">檢視群組</string>
+    <string name="dialog_msg_pidforgroupfail">請確認身分證字號正確或是在診所有初診紀錄</string>
+    <string name="dialog_msg_pidforgroupempty">請輸入要加入群組會員的身分證字號、手機號碼及Email</string>
+    <string name="dialog_msg_mygroupnoauthorization">您沒有使用【我的群組】的權限</string>
+    <string name="dialog_msg_nobpmclinic">系統沒有找到提供經脈血壓計的診所</string>
+    <string name="dialog_msg_groupmemberexceeds">您的群組人數已經達到上限的五人</string>
+
+
+    <!-- 忘記密碼 -->
+    <string name="btn_requestpass">申請新密碼</string>
+    <string name="label_forgetclinic">診所</string>
+    <string name="label_forgetaccount">帳號</string>
+    <string name="label_forgetmobile">手機末五碼</string>
+    <string name="label_forgetpid">身分證末五碼</string>
+    <string name="label_forgetbirthday">生日日期共四碼</string>
+    <string name="label_forgetbirthday_hint">如三月九日請輸入0309</string>
+    <string name="label_forgetrank">兄弟姊妹中的排行</string>
+    <string name="label_forgetrank_hint">如 1 = 老大，2 = 老二，以此類推</string>
+    <string name="label_forgetfloor">居住的樓層數字</string>
+    <string name="label_forgetfloor_hint">如 1 = 一樓，2 = 二樓，以此類推</string>
+    <string name="msg_forgetpid_error">請輸入身分證號末五碼</string>
+    <string name="msg_forgetbirthday_error">請輸入生日日期四碼數字</string>
+    <string name="msg_forgetmobile_error">請輸入手機末五碼數字</string>
+    <string name="msg_forgetrank_error">請輸入兄弟姊妹排行數字</string>
+    <string name="msg_forgetfloor_error">請輸入居住樓層數字</string>
+    <string name="activity_mainfunction_title">主功能頁</string>
+    <string name="check_privacyagree">我同意已閱讀且已充分瞭解此使用條款內容並願意使用本服務</string>
+    <string name="clicktotakepicture">輕按以開啟拍照功能</string>
+    <string name="btn_blestopmeasure">停止量測</string>
+    <string name="btn_blestartmeasure">開始量測</string>
+    <string name="dialog_msg_forgetpassask">如果您申請新密碼，原有的密碼將會失效無法再使用。您確定要繼續申請新密碼？</string>
+    <string name="dialog_msg_checkHasAccount">如果您曾經註冊或是已經有診所帳號，請勿再重複註冊。</string>
+    <string name="dialog_gotoregister">前往註冊</string>
+    <string name="dialog_goforgetpass">申請新密碼</string>
+    <string name="dialog_abordforgetpass">取消申請</string>
+    <string name="label_forgetdescription">請輸入以下的內容。如果您申請帳號時未設定家中排行與樓層，此項目請保留空白</string>
+
+    <!-- 經脈分析報告-->
+    <string name="label_bpmanalysischart">血壓波分析圖</string>
+    <string name="label_bpmanalysisreport">血壓量測穩定性</string>
+    <string name="name_meridiancode">諧波</string>
+    <string name="name_energydensity">能量密度</string>
+    <string name="name_energyvariance">變異率</string>
+    <string name="name_measuretime">量測時間：</string>
+    <string name="name_recordrange3month">三個月</string>
+    <string name="name_recordrange12month">一年</string>
+    <string name="name_recordrange">選取範圍</string>
+    <string name="amplitudes">能量</string>
+    <string name="amplitudes_realimg">能量虛實</string>
+    <string name="amplitudes_ratio">能量比</string>
+    <string name="amplitudes_variance">能量變異</string>
+    <string name="phase">相位</string>
+    <string name="phase_realimg">相位虛實</string>
+    <string name="phase_variance">相位變異</string>
+    <string name="phase_ratio">相位比</string>
+    <string name="heartrate_variance">心跳亂度</string>
+    <string name="btn_next"><![CDATA[>]]></string>
+    <string name="btn_prev"><![CDATA[<]]></string>
+    <string name="btn_bpmupload">資料上傳</string>
+    <string name="btn_bpmstopmeasure">停止量測</string>
+    <string name="btn_bpmreloadmeasure">重新量測</string>
+    <string name="dialog_msg_bpmuploaderror">資料上傳失敗，請檢查您的網路狀態再嘗試重新上傳。</string>
+    <string name="dialog_reupload">重新上傳</string>
+    <string name="dialog_localsave">本機儲存</string>
+    <string name="dialog_abordupload">放棄上傳</string>
+    <string name="dialog_msg_bpmuploadsuccess">資料上傳成功。同一位受測者是否要再量測一次，或是換下一個受測者量測？</string>
+    <string name="dialog_msg_bpmsavesuccess">資料儲存成功。同一位受測者是否要再量測一次，或是換下一個受測者量測？</string>
+    <string name="dialog_nextmember">下一位患者</string>
+    <string name="dialog_switchhand">再量測一次</string>
+    <string name="bemeasuredmember">受測者</string>
+    <string name="txt_bpmavatar">臉部照片</string>
+    <string name="btn_ready2measure">開始量測</string>
+    <string name="dialog_msg_systemerror">系統錯誤</string>
+    <string name="dialog_msg_requestfail">資料庫查詢錯誤</string>
+    <string name="dialog_msg_fftcounterror">FFT轉換數據不正確</string>
+    <string name="dialog_msg_jsontranserror">JSON 轉換失敗</string>
+    <string name="dialog_msg_bpmmeasurecomplete">請勿上傳非受測者的脈診量測資料，以免因資料錯誤造成診療錯誤。</string>
+    <string name="dialog_DONTWANT">不要</string>
+    <string name="bpwavename">血壓波</string>
+    <string name="pulsewavename">血壓波</string>
+    <string name="getanalyticresult">分析結果</string>
+    <string name="activity_chartwave_title">血壓波形</string>
+    <string name="pulsewave1">第一血壓波</string>
+    <string name="pulsewave2">第二血壓波</string>
+    <string name="btn_stopmeasure">停止量測</string>
+    <string name="dialog_msg_measurehasbeenstopped">您確定要停止量測作業？</string>
+    <string name="dialog_measurestop_yes">停止量測</string>
+    <string name="dialog_measurestop_no">繼續量測</string>
+    <string name="dialog_measurereload">重新量測</string>
+    <string name="dialog_errorreport">回報錯誤</string>
+    <string name="progress_upload">資料上傳中......</string>
+    <string name="progress_analysis">資料分析中......</string>
+    <string name="btn_remeasure">重新量測</string>
+    <string name="btn_nextmeasure">下一筆量測</string>
+    <string name="dialog_msg_bpmhardwarestop">血壓波血壓計已經停止運作，請停止量測作業並檢查血壓計的狀態。</string>
+    <string name="dialog_msg_bpmreaderror">血壓波血壓計無法取得血壓及心率數據，請重新調整束緊壓脈帶並開啟血壓波血壓計電源後，再重新進行測量。</string>
+    <string name="dialog_msg_bpmreaderrorandreport">血壓波血壓計無法取得血壓及心率數據。您可以選擇向系統回報錯誤訊息，或是請重新調整束緊壓脈帶並開啟血壓波血壓計電源後，再重新進行測量。</string>
+    <string name="dialog_msg_bpmreadinsufficient">血壓波血壓計量測數據不足，請檢查血壓波血壓計的狀態後，點選【重新量測】再重測一次。</string>
+    <string name="dialog_msg_bpmreadscheduleerror">血壓波血壓計量測順序錯誤，請點選【重新量測】再重測一次。</string>
+    <string name="dialog_msg_bpmdatalengtherror">血壓波血壓計量測資料長度錯誤，請重新開啟血壓波血壓計電源後，再重新進行測量。</string>
+    <string name="dialog_msg_nomemberregistertoday">今日尚未有個案報到。</string>
+    <string name="dialog_msg_bluetoothmanagerbuildfail">初始化藍牙過程中，無法建立藍芽管理員。量測作業將會終止。</string>
+    <string name="dialog_msg_bluetoothadapterbuildfail">初始化藍牙過程中，無法取得藍牙適配器。量測作業將會終止。</string>
+    <string name="dialog_msg_bpmhardwareinflater">血壓波血壓計運作異常，請檢查是否正在充氣或是停止運作。</string>
+    <string name="dialog_msg_bpmbluetoothondisconnected">血壓波血壓計藍芽連線中斷，請確認連線狀態並重啟量測。</string>
+    <string name="dialog_msg_bpmanlaysisresult">您的血壓諧波亂度偏高，為排除量測誤差，建議您重新量測一次。若重測後仍出現此數值偏高訊息，建議您向醫師諮詢。</string>
+    <string name="dialog_msg_guestnoupload">賓客的資料不能上傳</string>
+    <string name="dialog_measurestop_inflating">充氣中繼續量測</string>
+    <string name="dialog_confirmupload">確認上傳</string>
+    <string name="dialog_notupload">放棄上傳</string>
+    <string name="dialog_msg_waitdoctorresponse">資料已上傳完成，請等候醫師回覆分析結果。</string>
+    <string name="dialog_msg_notifyattending">的脈診資料已上傳完成，請到脈診系統檢視內容。</string>
+
+
+    <string name="bpmstatus_M0P0">血壓量測開始</string>
+    <string name="bpmstatus_M0P1">血壓量測中...</string>
+    <string name="bpmstatus_M0P2">血壓量測結束</string>
+    <string name="bpmstatus_M0P3">充氣中</string>
+    <string name="bpmstatus_M1P0">血壓波量測開始</string>
+    <string name="bpmstatus_M1P1">血壓波(一)量測中...</string>
+    <string name="bpmstatus_M1P2">血壓波(二)量測中..</string>
+    <string name="bpmstatus_M1PX">血壓波量測中...</string>
+    <string name="bpmstatus_M1P3">血壓波量測結束</string>
+    <string name="bpmstatus_00">沒有錯誤</string>
+    <string name="bpmstatus_01">心律不整</string>
+    <string name="bpmstatus_E0">結果超出量測範圍</string>
+    <string name="bpmstatus_E1">加壓逾時</string>
+    <string name="bpmstatus_E2">壓力超過最高限制</string>
+    <string name="bpmstatus_E3">無法取得血壓值</string>
+    <string name="bpmstatus_EA">使用者中斷</string>
+    <string name="bpmstatus_EB">低電壓中斷</string>
+    <string name="bpmstatus_EE">結果超出量測範圍</string>
+    <string name="actionhint_pressStart">請按下血壓波血壓計的Start按鍵，開始血壓量測</string>
+    <string name="actionhint_readingstop">血壓波血壓計量測作業暫停中。</string>
+    <string name="actionhint_readinsufficient">血壓波血壓計量測數據不足。\n請檢查血壓計的狀態後，點選【重新量測】再重測一次。</string>
+    <string name="actionhint_measurefinish">量測已經結束，如資料無誤請點選【資料上傳】按鍵。\n或是點選【重新量測】再重測一次。</string>
+    <string name="actionhint_pressMem">請長按血壓波血壓計的 MEM 按鍵三秒，直到螢幕內容全部顯示，即進入血壓波量測階段。
+                                                                                 \n若按壓時間不足會導致脈診量測無法啟動，此時需點選【重新量測】再重測一次血壓資料。</string>
+    <string name="actionhint_keepstill">請保持安靜穩定的狀態，以免量測誤差</string>
+    <string name="actionhint_checkinflating">如果血壓波血壓計正在充氣，請靜待充氣完畢。\n若無回應，請關閉血壓波血壓計，檢查儀器的狀態後重新開啟，並再點選【重新量測】。</string>
+
+    <string name="pulsewave2_color">血壓波二(綠)</string>
+    <string name="pulsewave1_color">血壓波一(黃)</string>
+    <string name="bpwavename_color">血壓波</string>
+    <string name="dialog_msg_changepassempty">所有欄位不可以空白</string>
+    <string name="dialog_msg_changepassconflict">新密碼輸入不同，請重新輸入</string>
+    <string name="dialog_msg_changepasssuccess">密碼變更成功</string>
+    <string name="dialog_msg_changepasserror">密碼變更失敗</string>
+    <string name="dialog_msg_changepassupdatefail">密碼更新錯誤</string>
+    <string name="dialog_msg_changepassincorrect">原密碼輸入錯誤，請重新輸入</string>
+    <string name="dialog_msg_changepassdb">DB數據錯誤。</string>
+    <string name="btn_readfftreport">讀取報告</string>
+    <string name="dialog_msg_fftreportnotready">血壓波報告尚未完成，請稍後數分鐘後再試。</string>
+    <string name="dialog_msg_recordiderror">脈診紀錄ID錯誤，無法讀取資料。</string>
+    <string name="dialog_msg_takeavatarbeforebpm">血壓波量測前，請先拍攝臉部照片。</string>
+    <string name="dialog_msg_takeavatarbeforeregister">註冊前請先拍攝臉部照片</string>
+    <string name="dialog_msg_registerduplicate">這個帳號已經被註冊了，請另外設定新的帳號</string>
+    <string name="label_username">姓名</string>
+    <string name="inputhint_registername">請輸入您的姓名</string>
+    <string name="mainfunctiontitle_bpm">血壓波量測</string>
+    <string name="mainfunctiondes_bpm">讀取血壓波的數據</string>
+    <string name="mainfunctiontitle_upload">數據上傳</string>
+    <string name="mainfunctiondes_upload">將本機儲存的資料上傳到雲端</string>
+    <string name="mainfunctiontitle_cuffreset">壓脈帶更新</string>
+    <string name="mainfunctiondes_cuffreset">更新壓脈帶並將脈診儀計數歸零</string>
+    <string name="mainfunctiontitle_customersn">制定序號</string>
+    <string name="mainfunctiondes_customersn">制定血壓計設備序號</string>
+    <string name="mainfunctiontitle_dbswitch">切換資料庫</string>
+    <string name="mainfunctiondes_dbswitch">在正式區與測試區資料庫之間切換</string>
+    <string name="mainfunctiontitle_cut">血壓波切波</string>
+    <string name="mainfunctiondes_cut">顯示切波結果及確認</string>
+    <string name="mainfunctiontitle_changepass">變更密碼</string>
+    <string name="mainfunctiondes_changepass">變更您的密碼</string>
+    <string name="mainfunctiontitle_myrecords">血壓波紀錄</string>
+    <string name="mainfunctiondes_myrecords">讀取我的血壓波紀錄</string>
+    <string name="mainfunctiontitle_mygroup">我的群組</string>
+    <string name="mainfunctiondes_mygroup">選取會員加入群組</string>
+    <string name="mainfunctiontitle_mysubscript">訂閱報告</string>
+    <string name="mainfunctiondes_mysubscript">訂閱每日量測報告</string>
+    <string name="mainfunctiontitle_myfolder">健康存摺</string>
+    <string name="mainfunctiondes_myfolder">讀取衛服部健康存摺內容</string>
+    <string name="mainfunctiontitle_reservation">預約掛號</string>
+    <string name="mainfunctiondes_reservation">預約看診時間</string>
+    <string name="mainfunctiontitle_setting">個人設定</string>
+    <string name="mainfunctiondes_setting">個人資訊設定</string>
+    <string name="mainfunctiontitle_family">推播設定</string>
+    <string name="mainfunctiondes_family">設定分享數據的親屬</string>
+    <string name="mainfunctiontitle_myqrcode">二維條碼</string>
+    <string name="mainfunctiondes_myqrcode">顯示我的二維條碼 QRCode</string>
+    <string name="mainfunctiontitle_alarm">血壓波提醒</string>
+    <string name="mainfunctiondes_alarm">設定您每日量測血壓波的時間</string>
+    <string name="mainfunctiontitle_rememberaccount">記憶帳號</string>
+    <string name="mainfunctiontdes_rememberaccount">自動記憶並提示登入帳號密碼</string>
+    <string name="label_familyinfo">推播資訊</string>
+    <string name="inputhint_familyaccount">請輸入要求血壓波推播的帳號</string>
+    <string name="inputhint_familypid">請輸入要加入親屬的身分證號碼</string>
+    <string name="inputhint_familybirthday">請輸入要加入親屬的生日</string>
+    <string name="btn_requestfamily">推播申請</string>
+    <string name="dialog_msg_familyfieldempty">推播帳號欄位不可以空白</string>
+    <string name="name_acceptfamilyname">推播姓名及帳號</string>
+    <string name="dialog_msg_familysettingok">推播設定完成</string>
+    <string name="dialog_msg_insertfamilyfail">資料庫錯誤，推播新增失敗</string>
+    <string name="dialog_msg_updatefamilyfail">資料庫錯誤，推播修改失敗</string>
+    <string name="dialog_msg_incorrectfamilyinfo">您輸入的推播帳號資訊錯誤</string>
+    <string name="dialog_msg_familyalready">此帳號推播已被設定</string>
+
+    <!-- Setting Change Pass -->
+    <string name="label_password00">目前的密碼</string>
+    <string name="label_password10">新的密碼</string>
+    <string name="label_password11">新密碼</string>
+    <string name="inputhint_password00">請輸入目前使用的密碼</string>
+    <string name="inputhint_password10">請輸入要變更的新密碼</string>
+    <string name="inputhint_password11">請再次輸入新密碼</string>
+    <string name="btn_confrimchangepass">密碼變更</string>
+    <string name="label_pushlist">推播名單列表</string>
+    <string name="label_addpushaccount">新增推播</string>
+    <string name="me">我</string>
+    <string name="requestpushagain">再次申請</string>
+    <string name="disconnectpush">終止推播</string>
+    <string name="requestpushabord">放棄申請</string>
+    <string name="reconnectpush">恢復推播</string>
+    <string name="acceptpushrequest">同意申請</string>
+    <string name="denypushrequest">拒絕授權</string>
+    <string name="dialog_msg_requestpushagain">您確定要再次送出推播申請？</string>
+    <string name="dialog_msg_disconnectpush">您確定要終止此帳號的血壓波推播？</string>
+    <string name="dialog_msg_reconnectpush">您確定要恢復此帳號的血壓波推播？</string>
+    <string name="dialog_msg_acceptpushrequest">您確定要接受此帳號的推播申請？</string>
+    <string name="dialog_msg_requestpushabord">您確定要放棄此帳號的血壓波推播申請？</string>
+    <string name="dialog_msg_denypushrequest">您確定要拒絕此帳號的推播申請？</string>
+    <string name="msg_fcm_title">血壓波系統通知</string>
+    <string name="msg_fcm_requestpushagain">想要取得您的血壓波通知授權。請到APP設定中確認是否接受</string>
+    <string name="msg_fcm_acceptpushrequest">已經授權您取得血壓波通知。請到APP設定中確認</string>
+    <string name="msg_fcm_denypushrequest">已經拒絕您的血壓波通知授權。請到APP設定中確認</string>
+
+    <!-- 設定脈診提醒鬧鐘 -->
+    <string name="label_alarmtitle">鬧鐘名稱</string>
+    <string name="inputhint_alarmtitle">請輸入鬧鐘的名稱</string>
+    <string name="input_alarmtitle">血壓波量測提醒</string>
+    <string name="btn_confirmalarm">鬧鐘確定</string>
+    <string name="label_alarmtime">提醒時間</string>
+    <string name="setting_alarm_title">血壓波量測提醒</string>
+    <string name="dialog_msg_alerttitleempty">請輸入鬧鐘名稱</string>
+    <string name="dialog_msg_alerttimeempty">請輸入提醒時間</string>
+    <string name="label_registerclinic">診所</string>
+    <string name="label_myqrcode">我的二維條碼(QRCode)</string>
+
+    <!-- 顯示二維條碼 -->
+    <string name="setting_myqrcode_title">二維條碼</string>
+    <string name="mainfunctiontitle_passquestion">密碼提示</string>
+    <string name="mainfunctiontdes_passquestion">設定忘記密碼時的提示問題</string>
+    <string name="setting_passquestion_title">密碼提示</string>
+    <string name="btn_confirm">確定</string>
+    <string name="dialog_msg_forgetpassanswererror">您的問題回應錯誤</string>
+    <string name="dialog_msg_yourpassis">您的密碼是：</string>
+    <string name="label_forgetrole">我是</string>
+    <string name="switch_imadmin">醫護</string>
+    <string name="switch_imuser">用戶</string>
+    <string name="setting_rememberlogin_title">記住帳號</string>
+    <string name="check_rememberaccount">我同意自動記錄前次登入帳號</string>
+    <string name="check_rememberpass">我同意自動記錄前次登入密碼</string>
+    <string name="activity_pulsecut_title">血壓波切波</string>
+    <string name="setting_me_title">關於我</string>
+    <string name="btn_ready2me">確定修改</string>
+    <string name="btn_cancel2me">放棄修改</string>
+    <string name="mainfunctiontitle_me">關於我</string>
+    <string name="mainfunctiondes_me">我的個人檔案</string>
+    <string name="activity_bpmlist_title">血壓波個案列表</string>
+    <string name="dialog_msg_bluetoothscanneedgps">開啟藍芽掃描功能必須要有GPS授權。</string>
+    <string name="dialog_msg_bluetoothscanneedpermission">開啟藍芽掃描功能必須要有取得授權。</string>
+    <string name="dialog_msg_bluetoothconnneedpermission">開啟藍芽通訊功能必須要有取得授權。</string>
+
+    <string name="dialog_Update">更新</string>
+    <string name="dialog_msg_appversionincorrect">APP有新的版本，請選擇【更新】下載。\n或長按螢幕右下角的version手動更新。</string>
+    <string name="dialog_msg_mustsignprivacypolicy">在使用APP之前，您必須同意隱私權聲明。</string>
+    <string name="dialog_msg_fcmtokenwriteerror">FCM推播設定失敗。</string>
+    <string name="mainfunctiontitle_payment">線上金流</string>
+    <string name="mainfunctiondes_payment">線上信用卡付款</string>
+    <string name="dialog_msg_certificationmailhassendtou">註冊驗證信件已經寄出，請到您設定的信箱收取(請同時檢查垃圾信件收件夾)。</string>
+
+    <!-- 健康存摺 -->
+    <string name="activity_mhbagreement_title">同意書</string>
+    <string name="check_mhbagreement">我已閱讀且已充分瞭解此使用條款內容，並同意使用本服務</string>
+    <string name="btn_mhbagreement">同意</string>
+    <string name="btn_mhbdisagree">不同意</string>
+    <string name="dialog_msg_mhbaccessnoted">本人授權並同意臺灣益謙股份有限公司提供本軟體與服務系統，可選取本人特定期間內個人就醫、用藥及檢驗結果等健康存摺內的資料，下載儲存於本服務系統使用。</string>
+    <string name="dialog_msg_mhbaccessreport">為利獲取完善健康資訊，本人授權並同意臺灣益謙股份有限公司提供本軟體與服務系統，可選取本人特定期間內個人就醫、用藥及檢驗結果等健康存摺內的資料，下載儲存於本服務系統使用，並提供於 本軟體查詢。本人知悉不同意授權，將會暫停使用 訂閱制服務。</string>
+    <string name="dialog_msg_reporttodayonly">您只能讀取今日量測的報告。</string>
+
+
+    <!-- 資料上傳-->
+    <string name="btn_deletedata">刪除資料</string>
+    <string name="btn_uploaddata">上傳資料</string>
+    <string name="label_uploaddata">請選擇要上傳或刪除的資料</string>
+    <string name="dialog_msg_uploadcomplete">資料已經全部上傳完畢！</string>
+
+    <!-- 主功能頁 Mainfunction -->
+    <string name="dialog_msg_askuploaddata">您還有量測資料尚未上傳，是否要現在上傳？</string>
+    <string name="dialog_msg_unableuploadinofflinemode">您現在處於離線模式，數據無法上傳。</string>
+    <string name="dialog_uploaddata">現在上傳</string>
+    <string name="dialog_uploadlater">下次再說</string>
+    <string name="dialog_msg_reportsubscriptexpired">您的訂閱報告服務已經過期，是否要續訂？</string>
+    <string name="dialog_msg_prereportsubscript1">您的訂閱報告到期日期為</string>
+    <string name="dialog_msg_prereportsubscript2">請在到期之後再申請新的訂閱。</string>
+    <string name="dialog_msg_goingtomhb">即將前往健保局健康存摺\n請於健康存摺中輸入您的資料</string>
+    <string name="dialog_msg_goingtomhberror">健保局健康存摺模組開啟失敗，請洽益謙資訊人員</string>
+
+
+    <!-- 選取資料類型 -->
+    <string name="record_datatable">歷史數據表</string>
+    <string name="record_datalinechart">歷史折線圖</string>
+    <string name="record_databarchart">前後測比較</string>
+    <string name="recorddes_datatable">以數字呈現您的健康數據</string>
+    <string name="recorddes_datalinechart">以折線方式呈現您的健康數據</string>
+    <string name="recorddes_databarchart">以柱狀圖比較前後兩次健康數據</string>
+    <string name="label_before">前</string>
+    <string name="label_after">後</string>
+    <string name="dialog_msg_bpwavearrayerror">血壓波數據有誤，無法顯示波形</string>
+    <string name="dialog_msg_authenticationdeny">您沒有讀取此項功能之權限</string>
+    <string name="dialog_msg_readreportauthdeny">您沒有閱讀報告權限，請先訂閱報告讀取服務</string>
+    <string name="dialog_msg_readreportover1">您已經達到每日1份報告的限量額度</string>
+    <string name="dialog_msg_readreportover2">您已經達到每日2份報告的限量額度</string>
+    <string name="dialog_msg_reportreadexceedquota">你今天讀取報告的數量已經超過額度</string>
+    <string name="dialog_msg_norecorddatafount">資料庫中沒有紀錄</string>
+    <string name="dialog_msg_norecorddatafountin3month">您沒有三個月內的量測記錄</string>
+
+    <!-- 壓脈帶歸零 -->
+    <string name="btn_cuffreset">計數歸零</string>
+    <string name="dialog_msg_cuffresetbluetoothondisconnected">血壓波血壓計藍芽連線中斷，請確認連線狀態並重新連線。</string>
+    <string name="label_cuffcount">血壓計壓脈帶使用次數</string>
+    <string name="dialog_msg_askcuffreset">是否要將壓脈帶使用次數歸零？</string>
+    <string name="dialog_cuffreset">歸零</string>
+
+    <!-- 制定序號-->
+    <string name="btn_customersn">制定序號</string>
+    <string name="dialog_msg_customersnbluetoothondisconnected">血壓波血壓計藍芽連線中斷，請確認連線狀態並重新連線。</string>
+    <string name="label_customersn">設備序號 SN</string>
+    <string name="dialog_msg_askcustomersn">是否要設定設備序號？</string>
+    <string name="dialog_customersn">制定</string>
+
+    <string-array name="chartmode_array">
+        <!-- item>能量虛實</item-->
+        <item>能量變異</item>
+    </string-array>
+
+    <string-array name="charthx_array">
+        <item>H0</item>
+        <item>H1</item>
+        <item>H2</item>
+        <item>H3</item>
+        <item>H4</item>
+        <item>H5</item>
+        <item>H6</item>
+        <item>H7</item>
+        <item>H8</item>
+        <item>H9</item>
+        <item>H10</item>
+    </string-array>
+    <string name="title_activity__infomation">ScrollingActivity</string>
+
+</resources>

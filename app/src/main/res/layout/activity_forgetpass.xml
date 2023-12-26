@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Forgetpass">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/label_forgetrole"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="45dp"
+            android:text="@string/label_forgetrole"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/labeltextsize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"  />
+        <RadioGroup
+            android:id="@+id/radio_forgetrole"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@id/label_forgetrole"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/label_forgetrole">
+            <RadioButton
+                android:id="@+id/radio_imuser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/role_user"
+                android:textSize="@dimen/labeltextsize"
+                android:checked="true" />
+            <RadioButton
+                android:id="@+id/radio_imadmin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/role_admin"
+                android:textSize="@dimen/labeltextsize" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/label_forgetdescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_forgetdescription"
+            android:textSize="@dimen/labeltextsize"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_forgetrole" />
+
+        <!-- 診所-->
+        <TextView
+            android:id="@+id/label_forgetclinic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_forgetclinic"
+            android:textSize="@dimen/labeltextsize"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_forgetdescription" />
+
+        <EditText
+            android:id="@+id/input_forgetclinic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_forgetaccount"
+            app:layout_constraintTop_toBottomOf="@id/label_forgetdescription" />
+
+    <!-- 帳號 -->
+    <TextView
+        android:id="@+id/label_forgetaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_forgetaccount"
+        android:textSize="@dimen/labeltextsize"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_forgetclinic" />
+
+    <EditText
+        android:id="@+id/input_forgetaccount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_forgetaccount"
+        app:layout_constraintTop_toBottomOf="@id/label_forgetclinic" />
+
+    <!-- 身分證末五碼 -->
+    <TextView
+        android:id="@+id/label_forgetpid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_forgetpid"
+        android:textSize="@dimen/labeltextsize"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_forgetaccount" />
+
+    <EditText
+        android:id="@+id/input_forgetpid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_forgetpid"
+        app:layout_constraintTop_toBottomOf="@id/label_forgetaccount" />
+
+    <!-- 手機末五碼 -->
+    <TextView
+        android:id="@+id/label_forgetmobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_forgetmobile"
+        android:textSize="@dimen/labeltextsize"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_forgetpid" />
+
+    <EditText
+        android:id="@+id/input_forgetmobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_forgetmobile"
+        app:layout_constraintTop_toBottomOf="@id/label_forgetpid" />
+
+        <!-- 生日共四碼 -->
+        <TextView
+            android:id="@+id/label_forgetbirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_forgetbirthday"
+            android:textSize="@dimen/labeltextsize"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_forgetmobile" />
+
+        <EditText
+            android:id="@+id/input_forgetbirthday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_forgetbirthday"
+            app:layout_constraintTop_toBottomOf="@id/label_forgetmobile" />
+
+        <!-- 家中排行 -->
+        <TextView
+            android:id="@+id/label_forgetrank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_forgetrank"
+            android:textSize="@dimen/labeltextsize"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_forgetbirthday" />
+
+        <EditText
+            android:id="@+id/input_forgetrank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_forgetrank"
+            app:layout_constraintTop_toBottomOf="@id/label_forgetbirthday" />
+
+        <!-- 家中排行 -->
+        <TextView
+            android:id="@+id/label_forgetfloor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_forgetfloor"
+            android:textSize="@dimen/labeltextsize"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_forgetrank" />
+
+        <EditText
+            android:id="@+id/input_forgetfloor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_forgetfloor"
+            app:layout_constraintTop_toBottomOf="@id/label_forgetrank" />
+
+
+    <Button
+        android:id="@+id/btn_forgetpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_shape_loginasp"
+        android:text="@string/btn_requestpass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_forgetfloor" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

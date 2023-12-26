@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".Activity_ChartWave">
+
+
+    <TextView
+        android:id="@+id/text_charttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/bpwavename_color"
+        android:textAlignment="textStart"
+        android:textFontWeight="800"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/text_chartpressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/bpwavename_color"
+        android:textAlignment="textStart"
+        android:textFontWeight="800"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_charttime"></TextView>
+
+    <LinearLayout
+        android:id="@+id/pulsewavelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn_shape_loginasa"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_chartpressure"></LinearLayout>
+
+    <TextView
+        android:id="@+id/text_bpwave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/bpwavename_color"
+        android:textAlignment="textStart"
+        android:textFontWeight="800"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pulsewavelayout"
+        app:layout_constraintWidth_percent="0.3"></TextView>
+
+    <TextView
+        android:id="@+id/text_pulsewave1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textFontWeight="800"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/text_bpwave"
+        app:layout_constraintTop_toBottomOf="@id/pulsewavelayout"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <TextView
+        android:id="@+id/text_pulsewave2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textFontWeight="800"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/text_pulsewave1"
+        app:layout_constraintTop_toBottomOf="@id/pulsewavelayout"
+        app:layout_constraintWidth_percent="0.3"></TextView>
+
+
+    <TextView
+        android:id="@+id/txt_waveavatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/txt_bpmavatar"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_pulsewave2" />
+
+    <ImageView
+        android:id="@+id/img_waveavatar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/cardview_light_background"
+        android:contentDescription="@string/clicktotakepicture"
+        app:layout_constraintStart_toEndOf="@id/txt_waveavatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txt_waveavatar"
+        app:layout_constraintBottom_toTopOf="@id/btn_readfftreport"
+        app:srcCompat="@drawable/btn_shape_loginasa" />
+
+    <Button
+        android:id="@+id/btn_readfftreport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_shape_loginasa"
+        android:text="@string/btn_readfftreport"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+       />
+    <ProgressBar
+        android:id="@+id/progressBar_chart"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

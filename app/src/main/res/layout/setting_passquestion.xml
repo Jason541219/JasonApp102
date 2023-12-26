@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting_PassQuestion">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!-- 身分證末五碼 -->
+        <TextView
+            android:id="@+id/label_questionpid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_forgetpid"
+            android:textSize="@dimen/labeltextsize"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/input_questionpid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_questionpid"
+            app:layout_constraintTop_toTopOf="@id/label_questionpid" />
+
+        <!-- 手機末五碼 -->
+        <TextView
+            android:id="@+id/label_questionmobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_forgetmobile"
+            android:textSize="@dimen/labeltextsize"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_questionpid" />
+
+        <EditText
+            android:id="@+id/input_questionmobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_questionmobile"
+            app:layout_constraintTop_toTopOf="@id/label_questionmobile" />
+
+        <!-- 生日共四碼 -->
+        <TextView
+            android:id="@+id/label_questionbirthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_forgetbirthday"
+            android:textSize="@dimen/labeltextsize"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@id/input_questionmobile" />
+
+        <EditText
+            android:id="@+id/input_questionbirthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@id/label_questionbirthday" />
+
+
+        <!-- 家中排行 -->
+        <TextView
+            android:id="@+id/label_questionrank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_forgetrank"
+            android:textSize="@dimen/labeltextsize"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@id/input_questionbirthday" />
+
+        <EditText
+            android:id="@+id/input_questionrank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:hint="@string/label_forgetrank_hint"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@id/label_questionrank" />
+
+        <!-- 家中排行 -->
+        <TextView
+            android:id="@+id/label_questionfloor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_forgetfloor"
+            android:textSize="@dimen/labeltextsize"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@id/input_questionrank" />
+
+        <EditText
+            android:id="@+id/input_questionfloor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:hint="@string/label_forgetfloor_hint"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@id/label_questionfloor" />
+
+        <Button
+            android:id="@+id/btn_confirmpassquestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btn_shape_loginasp"
+            android:text="@string/btn_confirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_questionfloor" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

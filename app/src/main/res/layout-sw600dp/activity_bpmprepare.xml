@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_BPMprepare">
+
+    <Spinner
+        android:id="@+id/spinner_bemeasuredmember"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/spinner_background"
+        app:layout_constraintTop_toTopOf="@id/txt_bemeasuredmember"
+        app:layout_constraintBottom_toBottomOf="@id/txt_bemeasuredmember"
+        app:layout_constraintEnd_toStartOf="@id/btn_bemeasuredmember"
+        app:layout_constraintStart_toEndOf="@id/txt_bemeasuredmember" />
+
+    <ImageButton
+        android:id="@+id/btn_bemeasuredmember"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@null"
+        android:src="@drawable/main_refresh"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="@id/txt_bemeasuredmember"
+        app:layout_constraintBottom_toBottomOf="@id/txt_bemeasuredmember"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinner_bemeasuredmember" />
+
+
+    <TextView
+        android:id="@+id/txt_bemeasuredmember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/bemeasuredmember"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_bemeasuredmemberdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="@dimen/labeltextsize"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_bemeasuredmember" />
+
+    <TextView
+        android:id="@+id/txt_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/switch_position"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_bemeasuredmemberdetail" />
+
+    <RadioGroup
+        android:id="@+id/radio_position"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintWidth_percent="0.6"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@id/txt_position"
+        app:layout_constraintBottom_toBottomOf="@id/txt_position">
+
+        <RadioButton
+            android:id="@+id/radio_position10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/switch_lefthand"
+            android:checked="true"
+            android:textSize="@dimen/labeltextsize" />
+
+        <RadioButton
+            android:id="@+id/radio_position20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/switch_righthand"
+            android:textSize="@dimen/labeltextsize" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/txt_posture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/switch_posture"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_position" />
+
+    <RadioGroup
+        android:id="@+id/radio_posture"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintWidth_percent="0.6"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@id/txt_posture"
+        app:layout_constraintBottom_toBottomOf="@id/txt_posture">
+        <RadioButton
+            android:id="@+id/radio_posture20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/switch_lie"
+            android:checked="true"
+            android:textSize="@dimen/labeltextsize" />
+        <RadioButton
+            android:id="@+id/radio_posture10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/switch_sitting"
+            android:textSize="@dimen/labeltextsize" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_oxygensaturation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/txt_oxygensaturation"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_posture" />
+
+    <EditText
+        android:id="@+id/input_oxygensaturation"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintStart_toEndOf="@id/txt_oxygensaturation"
+        app:layout_constraintTop_toBottomOf="@id/radio_posture" />
+
+    <TextView
+        android:id="@+id/txt_oxygensaturationunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="%"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintStart_toEndOf="@id/input_oxygensaturation"
+        app:layout_constraintTop_toBottomOf="@id/txt_posture" />
+
+    <TextView
+        android:id="@+id/txt_deviceversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/txt_deviceversion"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintStart_toEndOf="@id/txt_oxygensaturationunit"
+        app:layout_constraintBottom_toBottomOf="@id/txt_oxygensaturation" />
+
+
+    <Spinner
+        android:id="@+id/spinner_deviceversion"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/spinner_background"
+        app:layout_constraintTop_toTopOf="@+id/txt_bpmavatar"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_bpmavatar"
+        app:layout_constraintEnd_toStartOf="@id/btn_bemeasuredmember"
+        app:layout_constraintStart_toEndOf="@id/txt_bpmavatar" />
+
+    <TextView
+        android:id="@+id/txt_bpmavatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/txt_bpmavatar"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_oxygensaturation" />
+
+    <ImageView
+        android:id="@+id/img_bpmavatar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/cardview_light_background"
+        android:contentDescription="@string/clicktotakepicture"
+        app:layout_constraintStart_toEndOf="@id/txt_bpmavatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="@+id/txt_bpmavatar"
+        app:srcCompat="@drawable/btn_shape_loginasp" />
+
+
+    <Button
+        android:id="@+id/ready2measure"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_shape_loginasa"
+        android:text="@string/btn_ready2measure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_bpmavatar" />
+    <ProgressBar
+        android:id="@+id/progressBar_bpmprepare"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

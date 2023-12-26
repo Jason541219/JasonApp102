@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".Activity_Register">-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <TextView
+        android:id="@+id/label_registername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_username"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintBottom_toBottomOf="@+id/input_registername"
+        app:layout_constraintEnd_toStartOf="@id/guideline1R"
+        app:layout_constraintStart_toStartOf="@id/guideline1l"  />
+
+    <EditText
+        android:id="@+id/input_registername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/inputhint_registername"
+        app:layout_constraintEnd_toStartOf="@id/guideline2R"
+        app:layout_constraintStart_toStartOf="@id/guideline1R"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/label_registeraccount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_useraccount"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintBottom_toBottomOf="@id/input_registeraccount"
+        app:layout_constraintEnd_toStartOf="@id/guideline1R"
+        app:layout_constraintStart_toStartOf="@id/guideline1l" />
+
+    <EditText
+        android:id="@+id/input_registeraccount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/inputhint_loginaccount"
+        app:layout_constraintEnd_toStartOf="@id/guideline2R"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guideline1R"
+        app:layout_constraintTop_toBottomOf="@id/input_registername"
+        android:importantForAutofill="no" />
+
+
+
+    <TextView
+    android:id="@+id/label_registerpass"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="@string/label_userpassword"
+    android:textSize="@dimen/labeltextsize"
+    app:layout_constraintBottom_toBottomOf="@id/input_registerpass"
+    app:layout_constraintEnd_toStartOf="@id/guideline1R"
+    app:layout_constraintStart_toStartOf="@id/guideline1l" />
+
+    <EditText
+        android:id="@+id/input_registerpass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/inputhint_loginpass"
+        app:layout_constraintEnd_toStartOf="@id/guideline2R"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guideline1R"
+        app:layout_constraintTop_toBottomOf="@id/input_registeraccount"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/label_registerpid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_userpid"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintBottom_toBottomOf="@id/input_registerpid"
+        app:layout_constraintEnd_toStartOf="@id/guideline1R"
+        app:layout_constraintStart_toStartOf="@id/guideline1l" />
+
+    <EditText
+        android:id="@+id/input_registerpid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/inputhint_registerpid"
+        app:layout_constraintEnd_toStartOf="@id/guideline2R"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guideline1R"
+        app:layout_constraintTop_toBottomOf="@id/input_registerpass"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/label_registerbirthday"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_userbirthday"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintBottom_toBottomOf="@id/input_registerbirthday"
+        app:layout_constraintEnd_toStartOf="@id/guideline1R"
+        app:layout_constraintStart_toStartOf="@id/guideline1l" />
+
+    <EditText
+        android:id="@+id/input_registerbirthday"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="@string/inputhint_registerbirthday"
+        app:layout_constraintEnd_toStartOf="@id/guideline2R"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guideline1R"
+        app:layout_constraintTop_toBottomOf="@id/input_registerpid"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/label_registeremail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_useremail"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintBottom_toBottomOf="@id/input_registeremail"
+        app:layout_constraintEnd_toStartOf="@id/guideline1R"
+        app:layout_constraintStart_toStartOf="@id/guideline1l" />
+
+    <EditText
+        android:id="@+id/input_registeremail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/inputhint_registeremail"
+        app:layout_constraintEnd_toStartOf="@id/guideline2R"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guideline1R"
+        app:layout_constraintTop_toBottomOf="@id/input_registerbirthday"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/label_registermobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_usermobile"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintBottom_toBottomOf="@id/input_registermobile"
+        app:layout_constraintEnd_toStartOf="@id/guideline1R"
+        app:layout_constraintStart_toStartOf="@id/guideline1l" />
+
+    <EditText
+        android:id="@+id/input_registermobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="@string/inputhint_registermobile"
+        app:layout_constraintEnd_toStartOf="@id/guideline2R"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guideline1R"
+        app:layout_constraintTop_toBottomOf="@id/input_registeremail"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/label_registergender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_usergender"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintBottom_toBottomOf="@id/radio_registergender"
+        app:layout_constraintEnd_toStartOf="@id/guideline1R"
+        app:layout_constraintStart_toStartOf="@id/guideline1l" />
+
+    <RadioGroup
+        android:id="@+id/radio_registergender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline2R"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guideline1R"
+        app:layout_constraintTop_toBottomOf="@id/input_registermobile"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_registermale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_registermale"
+            android:checked="true"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio_registerfemale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_registerfemale"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/label_registerclinic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_registerclinic"
+            android:textSize="@dimen/labeltextsize"
+            app:layout_constraintBottom_toBottomOf="@id/spinner_registerclinic"
+            app:layout_constraintEnd_toStartOf="@id/guideline1R"
+            app:layout_constraintStart_toStartOf="@id/guideline1l" />
+
+        <Spinner
+            android:id="@+id/spinner_registerclinic"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@id/guideline2R"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:textSize="@dimen/labeltextsize"
+            android:background="@drawable/spinner_background"
+            app:layout_constraintTop_toBottomOf="@+id/radio_registergender"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline1R" />
+
+    <TextView
+        android:id="@+id/label_registeravatar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_useravatar"
+        android:textSize="@dimen/labeltextsize"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline1R"
+        app:layout_constraintStart_toStartOf="@id/guideline1l"
+        app:layout_constraintTop_toBottomOf="@id/label_registerclinic"   />
+
+    <ImageView
+        android:id="@+id/img_registeravatar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="0dp"
+        android:background="@color/cardview_light_background"
+        android:contentDescription="@string/clicktotakepicture"
+        app:layout_constraintStart_toEndOf="@id/label_registeravatar"
+        app:layout_constraintEnd_toStartOf="@id/guideline2R"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="@+id/label_registeravatar"
+        app:srcCompat="@drawable/btn_shape_loginasp" />
+
+
+
+        <Button
+            android:id="@+id/btn_goregister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_shape_loginasa"
+            android:text="@string/btn_ready2register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_registeravatar" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_register"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_goregister"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

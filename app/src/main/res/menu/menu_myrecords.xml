@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ideas.micro.jasonapp102.Activity_Myrecords">
+    <item
+        android:id="@+id/mylist_3month"
+        android:orderInCategory="100"
+        android:title="@string/name_recordrange3month"
+        app:showAsAction= "never" />
+    <item
+        android:id="@+id/mylist_12month"
+        android:orderInCategory="100"
+        android:title="@string/name_recordrange12month"
+        app:showAsAction= "never" />
+</menu>

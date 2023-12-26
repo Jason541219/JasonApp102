@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ideas.micro.jasonapp102">
+    <!--
+    保持螢幕喚醒不鎖屏
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- uses-permission android:name="android.permission.CAMERA" / -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" /> <!-- If your app targets Android 9 or lower, you can declare ACCESS_COARSE_LOCATION instead. -->
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="神算脈雲"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity_BPM_Btbpmv4x"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_Infomation"
+            android:exported="true"
+            android:label="@string/title_activity__infomation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_HistoryChart"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_ScanQR"
+            android:exported="true" /> <!-- 為了讓APP能夠連上 http (根據預設，Android 只能連上 https) -->
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/network_security_config" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/heartbeat" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:logo="@drawable/pulse64b"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 首頁 -->
+        <activity
+            android:name=".MainFunctionActivity"
+            android:exported="true"
+            android:label="@string/activity_mainfunction_title"
+            android:parentActivityName=".MainActivity" /> <!-- 主功能頁(醫護及使用者共用) -->
+        <activity
+            android:name=".Activity_ChooseRecords"
+            android:exported="true"
+            android:label="@string/activity_chooserecords_title"
+            android:parentActivityName=".MainFunctionActivity" /> <!-- 選擇資料的表示方式 -->
+        <activity
+            android:name=".Activity_PayOrder"
+            android:exported="true"
+            android:label="@string/activity_payorder_title"
+            android:parentActivityName=".MainFunctionActivity" /> <!-- 主功能頁(醫護及使用者共用) -->
+        <activity
+            android:name=".Activity_Setting"
+            android:exported="true"
+            android:label="@string/activity_setting_title"
+            android:parentActivityName=".MainFunctionActivity"
+            android:theme="@style/AppTheme" /> <!-- 設定 -->
+        <activity
+            android:name=".Activity_Mygroup"
+            android:exported="true"
+            android:label="@string/activity_mygroup_title"
+            android:parentActivityName=".MainFunctionActivity"
+            android:theme="@style/AppTheme" /> <!-- 我的群組 -->
+        <activity
+            android:name=".Setting_Me"
+            android:exported="true"
+            android:label="@string/setting_me_title"
+            android:parentActivityName=".Activity_Setting"
+            android:theme="@style/AppTheme" /> <!-- 變更密碼 -->
+        <activity
+            android:name=".Setting_ChangePass"
+            android:exported="true"
+            android:label="@string/setting_changepass_title"
+            android:parentActivityName=".Activity_Setting"
+            android:theme="@style/AppTheme" /> <!-- 變更密碼 -->
+        <activity
+            android:name=".Setting_Alarm"
+            android:exported="true"
+            android:label="@string/setting_alarm_title"
+            android:parentActivityName=".Activity_Setting"
+            android:theme="@style/AppTheme" /> <!-- 脈診提醒 -->
+        <activity
+            android:name=".Setting_RequestPush"
+            android:exported="true"
+            android:label="@string/setting_requestpush_title"
+            android:parentActivityName=".Activity_Setting"
+            android:theme="@style/AppTheme" /> <!-- 設定   親屬設定 -->
+        <activity
+            android:name=".Setting_MyQRCode"
+            android:exported="true"
+            android:label="@string/setting_myqrcode_title"
+            android:parentActivityName=".Activity_Setting"
+            android:theme="@style/AppTheme" /> <!-- 設定   顯示二維條碼 -->
+        <activity
+            android:name=".Setting_RememberLogin"
+            android:exported="true"
+            android:label="@string/setting_rememberlogin_title"
+            android:parentActivityName=".Activity_Setting"
+            android:theme="@style/AppTheme" /> <!-- 設定   記住帳號密碼 -->
+        <activity
+            android:name=".Setting_PassQuestion"
+            android:exported="true"
+            android:label="@string/setting_passquestion_title"
+            android:parentActivityName=".Activity_Setting"
+            android:theme="@style/AppTheme" /> <!-- 設定   密碼提示 -->
+        <activity
+            android:name=".Activity_Privacy"
+            android:exported="true"
+            android:label="@string/activity_privacy_title"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" /> <!-- 隱私權聲明 -->
+        <activity
+            android:name=".Activity_MHBagreement"
+            android:exported="true"
+            android:label="@string/activity_mhbagreement_title"
+            android:parentActivityName=".MainFunctionActivity"
+            android:theme="@style/AppTheme" /> <!-- 健康存摺同意書 -->
+        <activity
+            android:name=".Activity_Register"
+            android:exported="true"
+            android:label="@string/activity_register_title"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" /> <!-- 註冊帳號 -->
+        <activity
+            android:name=".Activity_Forgetpass"
+            android:exported="true"
+            android:label="@string/activity_forgetpass_title"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" /> <!-- 忘記密碼 -->
+        <activity
+            android:name=".Activity_ScanBLE"
+            android:exported="true"
+            android:label="@string/activity_scanble_title"
+            android:parentActivityName=".MainFunctionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" /> <!-- 藍牙掃描 -->
+        <activity
+            android:name=".Activity_BPMprepare"
+            android:exported="true"
+            android:label="@string/activity_bpmprepare_title"
+            android:parentActivityName=".Activity_ScanBLE"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" /> <!-- 血壓計預備 -->
+        <activity
+            android:name=".Activity_BPM_Btbpm"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:label="@string/activity_bpm_title"
+            android:parentActivityName=".Activity_BPMprepare"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" /> <!-- 脈診量測 -->
+        <activity
+            android:name=".Activity_UploadData"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:label="@string/activity_upload_title"
+            android:parentActivityName=".Activity_BPMprepare"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" /> <!-- 資料上傳 -->
+        <activity
+            android:name=".Activity_CuffReset"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:label="@string/activity_cuffreset_title"
+            android:parentActivityName=".MainFunctionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity_CustomerSN"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:label="@string/activity_customersn_title"
+            android:parentActivityName=".MainFunctionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity_Myrecords"
+            android:exported="true"
+            android:label="@string/activity_myrecords_title"
+            android:parentActivityName=".Activity_ChooseRecords"
+            android:theme="@style/AppTheme" /> <!-- 我的紀錄 -->
+        <activity android:name=".Activity_ChartHistory2"
+            android:exported="true"
+            android:label="@string/activity_charthistory_title"
+            android:parentActivityName=".Activity_ChooseRecords"
+            android:theme="@style/AppTheme" /> <!-- 歷史圖表 取消 android:screenOrientation="landscape" -->
+        <activity
+            android:name=".Activity_ChartHistory"
+            android:exported="true"
+            android:label="@string/activity_charthistory_title"
+            android:parentActivityName=".Activity_ChooseRecords"
+            android:theme="@style/AppTheme" /> <!-- 歷史圖表 取消 android:screenOrientation="landscape" -->
+        <activity
+            android:name=".Activity_BarCompare"
+            android:exported="true"
+            android:label="@string/activity_barcompare_title"
+            android:parentActivityName=".Activity_ChooseRecords"
+            android:theme="@style/AppTheme" /> <!-- 歷史圖表 -->
+        <activity
+            android:name=".Activity_ChartWave"
+            android:exported="true"
+            android:label="@string/activity_chartwave_title"
+            android:parentActivityName=".Activity_Myrecords"
+            android:theme="@style/AppTheme" /> <!-- 波型圖 -->
+        <activity
+            android:name=".Activity_Analysis"
+            android:exported="true"
+            android:label="@string/activity_analysis_title"
+            android:parentActivityName=".Activity_Myrecords"
+            android:theme="@style/AppTheme" /> <!-- 脈診分析 -->
+        <activity
+            android:name=".Activity_Analysis_1"
+            android:exported="true"
+            android:label="@string/activity_analysis_title"
+            android:parentActivityName=".Activity_Myrecords"
+            android:theme="@style/AppTheme" /> <!-- 脈診分析_1 -->
+        <!-- Google FCM 服務 -->
+        <service
+            android:name=".FCMService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

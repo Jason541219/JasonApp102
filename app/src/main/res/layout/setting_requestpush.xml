@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting_RequestPush">
+
+    <TextView
+        android:id="@+id/label_pushlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/label_pushlist"
+        android:textSize="@dimen/labeltextsize"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/pushlist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_requestpush"
+        app:layout_constraintHeight_max="1024dp"
+        app:layout_constraintTop_toBottomOf="@id/label_pushlist" />
+
+    <TextView
+        android:id="@+id/label_addpushaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/label_addpushaccount"
+        android:textSize="@dimen/labeltextsize"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/input_pushaccount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="@string/inputhint_familyaccount"
+        android:textAlignment="textStart"
+        android:importantForAutofill="no"
+        android:inputType = "textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_addpushaccount"
+       app:layout_constraintEnd_toStartOf="@id/btn_requestpush"
+/>
+
+    <ImageButton
+        android:id="@+id/btn_requestpush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:clickable="true"
+        android:adjustViewBounds="false"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/main_plus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('nhisdk-Beta1.1.0-protected-220117.aar'))

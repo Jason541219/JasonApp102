@@ -1,0 +1,4 @@
+include ':nhisdk-Beta1.1.0-protected-220117'
+include ':nhisdk-Beta1.1.0-protected-220117'
+include ':app'
+rootProject.name = "JasonApp102"

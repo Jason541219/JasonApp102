@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_BPM_Btbpm">
+
+    <TextView
+        android:id="@+id/text_bpmdevicename"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_btdevicename"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/detailtextsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.5"></TextView>
+
+    <TextView
+        android:id="@+id/text_bpmdevicestatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="@dimen/detailtextsize"
+        app:layout_constraintBottom_toBottomOf="@id/text_bpmdevicename"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_bpmdevicename"
+        app:layout_constraintWidth_percent="0.3"></TextView>
+
+    <LinearLayout
+        android:id="@+id/drawhlifelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn_shape_loginasa"
+        android:orientation="vertical"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_bpmdevicename"></LinearLayout>
+
+    <TextView
+        android:id="@+id/text_bpmdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="monospace"
+        android:text="data"
+        android:textAlignment="textEnd"
+        android:textSize="@dimen/detailtextsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drawhlifelayout"></TextView>
+
+    <TextView
+        android:id="@+id/label_sbp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_sbp"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_bpmdata"
+       ></TextView>
+
+    <TextView
+        android:id="@+id/text_bpwavesummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/label_sbp"
+        app:layout_constraintTop_toTopOf="@+id/label_sbp"
+        app:layout_constraintEnd_toEndOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/label_dbp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_dbp"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_sbp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/text_pulse1summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/label_dbp"
+        app:layout_constraintTop_toTopOf="@+id/label_dbp"
+        app:layout_constraintEnd_toEndOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/label_hr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_heartbeatrate"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_dbp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/label_ihb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_ihb"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="@dimen/labeltextsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_hr"
+        ></TextView>
+
+
+    <TextView
+        android:id="@+id/text_pulse2summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/label_hr"
+        app:layout_constraintTop_toTopOf="@+id/label_hr"
+        app:layout_constraintEnd_toEndOf="parent"></TextView>
+
+
+    <TextView
+        android:id="@+id/text_actionhint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:padding="15dp"
+        android:background="@drawable/btn_shape_loginasa"
+        android:textColor="#003333"
+        android:text="請長按脈診儀的MEM按鍵三秒，直到脈診儀的畫面內容全部顯示。開始脈診量測"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/detailtextsize"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_ihb"
+        app:layout_constraintBottom_toTopOf="@id/btn_bpmupload"
+        app:layout_constraintEnd_toEndOf="parent"></TextView>
+
+
+    <Button
+        android:id="@+id/btn_bpmstopmeasue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_shape_loginasp"
+        android:text="@string/btn_remeasure"
+        app:layout_constraintTop_toBottomOf="@id/text_actionhint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.35"/>
+
+    <Button
+        android:id="@+id/btn_bpmupload"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_shape_loginasa"
+        android:text="@string/btn_bleupload"
+        app:layout_constraintTop_toBottomOf="@id/text_actionhint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.35"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar_bpmupload"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar_bpmanalysis"
+        style="@style/BarraProgreso"
+        android:layout_width="180dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:max="100"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/text_progressupload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:padding="15dp"
+        android:textColor="#003333"
+        android:text="@string/progress_upload"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressBar_bpmupload"
+        app:layout_constraintEnd_toEndOf="parent"></TextView>
+
+
+    <TextView
+        android:id="@+id/text_progressanalysis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:padding="15dp"
+        android:textColor="#003333"
+        android:text="@string/progress_analysis"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressBar_bpmanalysis"
+        app:layout_constraintEnd_toEndOf="parent"></TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
